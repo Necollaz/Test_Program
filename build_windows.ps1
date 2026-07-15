@@ -30,6 +30,34 @@ function Invoke-Step {
     }
 }
 
+function Remove-ProjectFolder {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string] $Path
+    )
+
+    Assert-ProjectChildPath $Path
+
+    for ($attempt = 1; $attempt -le 5; $attempt++) {
+        try {
+            Write-Host "Removing old folder: $Path"
+            Remove-Item -LiteralPath $Path -Recurse -Force -ErrorAction Stop
+            return
+        }
+        catch {
+            if ($attempt -eq 5) {
+                Write-Host ""
+                Write-Host "Could not remove: $Path"
+                Write-Host "Close InterviewAssistant.exe, Explorer windows opened inside dist/build, Google Meet browser tabs if they launched the app, and any Python/PyInstaller processes, then run the build again."
+                throw
+            }
+
+            Write-Host "Folder is still locked. Retrying in 2 seconds... ($attempt/5)"
+            Start-Sleep -Seconds 2
+        }
+    }
+}
+
 $runningApp = Get-Process -Name "InterviewAssistant" -ErrorAction SilentlyContinue
 if ($runningApp) {
     throw "InterviewAssistant.exe is running. Close the app in Windows, then run this build script again."
@@ -40,9 +68,7 @@ $distDirRoot = Join-Path $PSScriptRoot "dist"
 
 foreach ($pathToClean in @($buildDir, $distDirRoot)) {
     if (Test-Path $pathToClean) {
-        Assert-ProjectChildPath $pathToClean
-        Write-Host "Removing old folder: $pathToClean"
-        Remove-Item -LiteralPath $pathToClean -Recurse -Force
+        Remove-ProjectFolder $pathToClean
     }
 }
 

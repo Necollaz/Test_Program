@@ -1,3 +1,4 @@
+import html
 from typing import Any
 
 from rapidfuzz import fuzz
@@ -78,3 +79,38 @@ def format_answer(item: dict[str, Any]) -> str:
         parts.append(source)
 
     return "\n".join(parts)
+
+
+def format_answer_html(item: dict[str, Any]) -> str:
+    question = html.escape(str(item.get("question", "")))
+    score = int(item.get("score", 0))
+    answer = _combine_answer_parts(item)
+
+    return f"""
+<div style="font-family: Segoe UI, Arial, sans-serif; font-size: 15px; line-height: 1.45;">
+  <div><b>Вопрос:</b> {question}</div>
+  <div><b>Совпадение:</b> {score}%</div>
+
+  <div style="height: 14px;"></div>
+  <div style="font-size: 19px; font-weight: 700; margin-bottom: 8px;">Ответ:</div>
+  <div style="white-space: pre-wrap;">{html.escape(answer)}</div>
+</div>
+""".strip()
+
+
+def _combine_answer_parts(item: dict[str, Any]) -> str:
+    parts = []
+
+    short_answer = item.get("short_answer", "")
+    if short_answer:
+        parts.append(str(short_answer).strip())
+
+    full_answer = item.get("full_answer", "")
+    if full_answer:
+        parts.append(str(full_answer).strip())
+
+    example = item.get("example", "")
+    if example:
+        parts.append(str(example).strip())
+
+    return "\n\n".join(part for part in parts if part)

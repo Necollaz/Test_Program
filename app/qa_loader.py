@@ -137,4 +137,24 @@ def clean_text(text: str) -> str:
 
 
 def normalize_text(text: str) -> str:
-    return " ".join(text.lower().replace("ё", "е").split())
+    normalized = text.lower().replace("ё", "е")
+
+    replacements = {
+        "лупое": "ооп",
+        "лупо": "ооп",
+        "о о п": "ооп",
+        "о-о-п": "ооп",
+        "о.о.п": "ооп",
+        "объектно ориентированное": "объектно-ориентированное",
+        "си шарп": "csharp",
+        "си-шарп": "csharp",
+        "c sharp": "csharp",
+        "с sharp": "csharp",
+        "ю нити": "unity",
+        "юнити": "unity",
+    }
+
+    for source, target in replacements.items():
+        normalized = normalized.replace(source, target)
+
+    return " ".join(normalized.split())

@@ -20,8 +20,14 @@ RECORDINGS_DIR = BASE_DIR / "recordings"
 
 LANGUAGE = "ru"
 WHISPER_MODEL = "small"
+WHISPER_BEAM_SIZE = 1
+WHISPER_INITIAL_PROMPT = (
+    "Вопросы собеседования по C#, Unity и ООП. "
+    "Термины: ООП, объектно-ориентированное программирование, "
+    "инкапсуляция, наследование, полиморфизм, абстракция, MonoBehaviour."
+)
 
 SAMPLE_RATE = 16000
-RECORD_SECONDS = 6
+RECORD_SECONDS = 4
 
 MIN_SEARCH_SCORE = 50

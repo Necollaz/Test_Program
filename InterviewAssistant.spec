@@ -1,6 +1,6 @@
 # -*- mode: python ; coding: utf-8 -*-
 
-from PyInstaller.utils.hooks import collect_submodules
+from PyInstaller.utils.hooks import collect_data_files, collect_submodules
 
 
 hiddenimports = []
@@ -8,15 +8,19 @@ hiddenimports += collect_submodules("faster_whisper")
 hiddenimports += collect_submodules("ctranslate2")
 hiddenimports += collect_submodules("huggingface_hub")
 hiddenimports += collect_submodules("requests")
+hiddenimports += collect_submodules("soundcard")
+
+datas = [
+    ("questions", "questions"),
+]
+datas += collect_data_files("faster_whisper")
 
 
 a = Analysis(
     ["app/main.py"],
     pathex=[],
     binaries=[],
-    datas=[
-        ("questions", "questions"),
-    ],
+    datas=datas,
     hiddenimports=hiddenimports,
     hookspath=[],
     hooksconfig={},

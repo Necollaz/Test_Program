@@ -5,6 +5,7 @@ from typing import Any
 from PySide6.QtCore import QObject, QThread, Signal
 from PySide6.QtWidgets import (
     QApplication,
+    QComboBox,
     QHBoxLayout,
     QLabel,
     QListWidget,
@@ -13,27 +14,41 @@ from PySide6.QtWidgets import (
     QPushButton,
     QPlainTextEdit,
     QSplitter,
+    QTextEdit,
     QVBoxLayout,
     QWidget,
 )
 
-from app.audio_recorder import record_question
+from app.audio_recorder import AudioSource, list_audio_sources, record_question
 from app.qa_loader import load_questions
-from app.search_engine import format_answer, search
-from app.speech_to_text import transcribe_audio
+from app.search_engine import format_answer_html, search
+from app.speech_to_text import get_model, transcribe_audio
+
+
+class ModelWarmupWorker(QObject):
+    finished = Signal()
+    failed = Signal(str)
+
+    def run(self) -> None:
+        try:
+            get_model()
+            self.finished.emit()
+        except Exception:
+            self.failed.emit(traceback.format_exc())
 
 
 class RecognitionWorker(QObject):
     finished = Signal(str, list)
     failed = Signal(str)
 
-    def __init__(self, items: list[dict[str, Any]]) -> None:
+    def __init__(self, items: list[dict[str, Any]], audio_source_id: str | None) -> None:
         super().__init__()
         self.items = items
+        self.audio_source_id = audio_source_id
 
     def run(self) -> None:
         try:
-            audio_path = record_question()
+            audio_path = record_question(audio_source_id=self.audio_source_id)
             recognized_text = transcribe_audio(audio_path)
             results = search(recognized_text, self.items)
             self.finished.emit(recognized_text, results)
@@ -48,15 +63,23 @@ class MainWindow(QMainWindow):
         self.items = load_questions()
         self.thread: QThread | None = None
         self.worker: RecognitionWorker | None = None
+        self.model_thread: QThread | None = None
+        self.model_worker: ModelWarmupWorker | None = None
         self.last_results: list[dict[str, Any]] = []
+        self.audio_sources: list[AudioSource] = []
 
         self.setWindowTitle("Interview Assistant - Unity / C#")
         self.resize(1100, 700)
+
+        self.audio_source_box = QComboBox()
+        self.refresh_devices_button = QPushButton("Обновить")
+        self.refresh_devices_button.clicked.connect(self.refresh_audio_sources)
 
         self.record_button = QPushButton("Записать вопрос")
         self.record_button.clicked.connect(self.start_recognition)
 
         self.status_label = QLabel(f"Загружено вопросов: {len(self.items)}")
+        self.refresh_audio_sources()
 
         self.recognized_text = QPlainTextEdit()
         self.recognized_text.setPlaceholderText("Здесь появится распознанный текст...")
@@ -65,7 +88,7 @@ class MainWindow(QMainWindow):
         self.manual_search_button = QPushButton("Найти по тексту")
         self.manual_search_button.clicked.connect(self.search_manual_text)
 
-        self.answer_text = QPlainTextEdit()
+        self.answer_text = QTextEdit()
         self.answer_text.setPlaceholderText("Здесь появится ответ...")
         self.answer_text.setReadOnly(True)
 
@@ -94,6 +117,9 @@ class MainWindow(QMainWindow):
         main_layout = QVBoxLayout(central)
 
         top_layout = QHBoxLayout()
+        top_layout.addWidget(QLabel("Источник звука"))
+        top_layout.addWidget(self.audio_source_box, 1)
+        top_layout.addWidget(self.refresh_devices_button)
         top_layout.addWidget(self.record_button)
         top_layout.addWidget(self.status_label)
 
@@ -101,13 +127,38 @@ class MainWindow(QMainWindow):
         main_layout.addWidget(splitter)
 
         self.setCentralWidget(central)
+        self.start_model_warmup()
+
+    def start_model_warmup(self) -> None:
+        self.status_label.setText(f"Загружено вопросов: {len(self.items)}. Загружаю модель...")
+
+        self.model_thread = QThread()
+        self.model_worker = ModelWarmupWorker()
+        self.model_worker.moveToThread(self.model_thread)
+
+        self.model_thread.started.connect(self.model_worker.run)
+        self.model_worker.finished.connect(self.on_model_warmup_finished)
+        self.model_worker.failed.connect(self.on_model_warmup_failed)
+        self.model_worker.finished.connect(self.model_thread.quit)
+        self.model_worker.failed.connect(self.model_thread.quit)
+        self.model_thread.finished.connect(self.cleanup_model_thread)
+
+        self.model_thread.start()
+
+    def on_model_warmup_finished(self) -> None:
+        self.status_label.setText(f"Загружено вопросов: {len(self.items)}. Модель готова.")
+
+    def on_model_warmup_failed(self, error: str) -> None:
+        self.status_label.setText("Модель не загрузилась.")
+        self.answer_text.setPlainText(error)
 
     def start_recognition(self) -> None:
+        audio_source_id = self.audio_source_box.currentData()
         self.record_button.setEnabled(False)
-        self.status_label.setText("Запись и распознавание... говори вопрос.")
+        self.status_label.setText("Запись и распознавание... слушаю выбранный источник.")
 
         self.thread = QThread()
-        self.worker = RecognitionWorker(self.items)
+        self.worker = RecognitionWorker(self.items, audio_source_id)
         self.worker.moveToThread(self.thread)
 
         self.thread.started.connect(self.worker.run)
@@ -139,9 +190,37 @@ class MainWindow(QMainWindow):
         self.status_label.setText("Ошибка.")
         self.answer_text.setPlainText(error)
 
+    def refresh_audio_sources(self) -> None:
+        self.audio_sources = list_audio_sources()
+        self.audio_source_box.clear()
+
+        for source in self.audio_sources:
+            self.audio_source_box.addItem(source.label, source.id)
+
+        loopback_index = next(
+            (
+                index
+                for index, source in enumerate(self.audio_sources)
+                if source.kind == "loopback"
+            ),
+            -1,
+        )
+        if loopback_index >= 0:
+            self.audio_source_box.setCurrentIndex(loopback_index)
+
+        has_sources = bool(self.audio_sources)
+        self.record_button.setEnabled(has_sources)
+
+        if not has_sources:
+            self.status_label.setText("Аудио-устройства не найдены.")
+
     def cleanup_thread(self) -> None:
         self.worker = None
         self.thread = None
+
+    def cleanup_model_thread(self) -> None:
+        self.model_worker = None
+        self.model_thread = None
 
     def search_manual_text(self) -> None:
         query = self.recognized_text.toPlainText()
@@ -164,7 +243,7 @@ class MainWindow(QMainWindow):
             self.results_list.addItem(item)
 
         self.results_list.setCurrentRow(0)
-        self.answer_text.setPlainText(format_answer(results[0]))
+        self.answer_text.setHtml(format_answer_html(results[0]))
 
     def show_selected_result(self, item: QListWidgetItem) -> None:
         index = item.data(1000)
@@ -172,7 +251,7 @@ class MainWindow(QMainWindow):
             return
 
         result = self.last_results[index]
-        self.answer_text.setPlainText(format_answer(result))
+        self.answer_text.setHtml(format_answer_html(result))
 
 
 def run_app() -> None:

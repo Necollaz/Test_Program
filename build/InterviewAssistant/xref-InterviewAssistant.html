@@ -15,7 +15,7 @@
 
 <div class="node">
   <a name="main.py"></a>
-  <a target="code" href="///D:/InterviewAssistant/app/main.py" type="text/plain"><tt>main.py</tt></a>
+  <a target="code" href="///D:/CocosProjects/Test_Program/app/main.py" type="text/plain"><tt>main.py</tt></a>
 <span class="moduletype">Script</span>  <div class="import">
 imports:
     <a href="#_collections_abc">_collections_abc</a>
@@ -403,6 +403,15 @@ imports:
  &#8226;   <a href="#requests.status_codes">requests.status_codes</a>
  &#8226;   <a href="#requests.structures">requests.structures</a>
  &#8226;   <a href="#requests.utils">requests.utils</a>
+ &#8226;   <a href="#soundcard">soundcard</a>
+ &#8226;   <a href="#soundcard.__pyinstaller">soundcard.__pyinstaller</a>
+ &#8226;   <a href="#soundcard.__pyinstaller.conftest">soundcard.__pyinstaller.conftest</a>
+ &#8226;   <a href="#soundcard.__pyinstaller.hook-soundcard">soundcard.__pyinstaller.hook-soundcard</a>
+ &#8226;   <a href="#soundcard.__pyinstaller.test_soundcard">soundcard.__pyinstaller.test_soundcard</a>
+ &#8226;   <a href="#soundcard.coreaudio">soundcard.coreaudio</a>
+ &#8226;   <a href="#soundcard.coreaudioconstants">soundcard.coreaudioconstants</a>
+ &#8226;   <a href="#soundcard.mediafoundation">soundcard.mediafoundation</a>
+ &#8226;   <a href="#soundcard.pulseaudio">soundcard.pulseaudio</a>
  &#8226;   <a href="#sre_compile">sre_compile</a>
  &#8226;   <a href="#sre_constants">sre_constants</a>
  &#8226;   <a href="#sre_parse">sre_parse</a>
@@ -722,6 +731,8 @@ imported by:
  &#8226;   <a href="#setuptools._distutils.util">setuptools._distutils.util</a>
  &#8226;   <a href="#setuptools._reqs">setuptools._reqs</a>
  &#8226;   <a href="#setuptools._shutil">setuptools._shutil</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._meta">setuptools._vendor.importlib_metadata._meta</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.context">setuptools._vendor.jaraco.context</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.functools">setuptools._vendor.jaraco.functools</a>
  &#8226;   <a href="#setuptools._vendor.more_itertools.more">setuptools._vendor.more_itertools.more</a>
@@ -742,6 +753,7 @@ imported by:
  &#8226;   <a href="#setuptools.extension">setuptools.extension</a>
  &#8226;   <a href="#setuptools.glob">setuptools.glob</a>
  &#8226;   <a href="#setuptools.wheel">setuptools.wheel</a>
+ &#8226;   <a href="#soundcard.pulseaudio">soundcard.pulseaudio</a>
  &#8226;   <a href="#sqlite3.dbapi2">sqlite3.dbapi2</a>
  &#8226;   <a href="#tomllib._parser">tomllib._parser</a>
  &#8226;   <a href="#traceback">traceback</a>
@@ -991,6 +1003,39 @@ imported by:
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
     <a href="#fsspec.implementations.libarchive">fsspec.implementations.libarchive</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="'macholib.MachO'"></a>
+  <a target="code" href="" type="text/plain"><tt>'macholib.MachO'</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#PyInstaller.utils.osx">PyInstaller.utils.osx</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="'macholib.mach_o'"></a>
+  <a target="code" href="" type="text/plain"><tt>'macholib.mach_o'</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#PyInstaller.utils.osx">PyInstaller.utils.osx</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="'macholib.util'"></a>
+  <a target="code" href="" type="text/plain"><tt>'macholib.util'</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#PyInstaller.utils.osx">PyInstaller.utils.osx</a>
 
   </div>
 
@@ -1259,6 +1304,17 @@ imported by:
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
     <a href="#cffi._shimmed_dist_utils">cffi._shimmed_dist_utils</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="'setuptools._distutils.msvccompiler'"></a>
+  <a target="code" href="" type="text/plain"><tt>'setuptools._distutils.msvccompiler'</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
 
   </div>
 
@@ -3681,6 +3737,905 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="PyInstaller"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/__init__.py" type="text/plain"><tt>PyInstaller</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.configure">PyInstaller.configure</a>
+ &#8226;   <a href="#PyInstaller.isolated">PyInstaller.isolated</a>
+ &#8226;   <a href="#PyInstaller.log">PyInstaller.log</a>
+ &#8226;   <a href="#os">os</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller._shared_with_waf">PyInstaller._shared_with_waf</a>
+ &#8226;   <a href="#PyInstaller.archive">PyInstaller.archive</a>
+ &#8226;   <a href="#PyInstaller.building">PyInstaller.building</a>
+ &#8226;   <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.config">PyInstaller.config</a>
+ &#8226;   <a href="#PyInstaller.configure">PyInstaller.configure</a>
+ &#8226;   <a href="#PyInstaller.depend">PyInstaller.depend</a>
+ &#8226;   <a href="#PyInstaller.depend.analysis">PyInstaller.depend.analysis</a>
+ &#8226;   <a href="#PyInstaller.depend.bytecode">PyInstaller.depend.bytecode</a>
+ &#8226;   <a href="#PyInstaller.depend.imphook">PyInstaller.depend.imphook</a>
+ &#8226;   <a href="#PyInstaller.exceptions">PyInstaller.exceptions</a>
+ &#8226;   <a href="#PyInstaller.isolated">PyInstaller.isolated</a>
+ &#8226;   <a href="#PyInstaller.isolated._parent">PyInstaller.isolated._parent</a>
+ &#8226;   <a href="#PyInstaller.lib">PyInstaller.lib</a>
+ &#8226;   <a href="#PyInstaller.loader">PyInstaller.loader</a>
+ &#8226;   <a href="#PyInstaller.log">PyInstaller.log</a>
+ &#8226;   <a href="#PyInstaller.utils">PyInstaller.utils</a>
+ &#8226;   <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks.conda">PyInstaller.utils.hooks.conda</a>
+ &#8226;   <a href="#PyInstaller.utils.misc">PyInstaller.utils.misc</a>
+ &#8226;   <a href="#PyInstaller.utils.osx">PyInstaller.utils.osx</a>
+ &#8226;   <a href="#PyInstaller.utils.win32.winutils">PyInstaller.utils.win32.winutils</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller._shared_with_waf"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/_shared_with_waf.py" type="text/plain"><tt>PyInstaller._shared_with_waf</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#platform">platform</a>
+ &#8226;   <a href="#re">re</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.compat">PyInstaller.compat</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.archive"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/archive/__init__.py" type="text/plain"><tt>PyInstaller.archive</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.archive.readers">PyInstaller.archive.readers</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.archive.readers"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/archive/readers.py" type="text/plain"><tt>PyInstaller.archive.readers</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller.archive">PyInstaller.archive</a>
+ &#8226;   <a href="#PyInstaller.loader.pyimod01_archive">PyInstaller.loader.pyimod01_archive</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#zlib">zlib</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.building"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/building/__init__.py" type="text/plain"><tt>PyInstaller.building</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.building.utils"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/building/utils.py" type="text/plain"><tt>PyInstaller.building.utils</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.building">PyInstaller.building</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.config">PyInstaller.config</a>
+ &#8226;   <a href="#PyInstaller.exceptions">PyInstaller.exceptions</a>
+ &#8226;   <a href="#PyInstaller.log">PyInstaller.log</a>
+ &#8226;   <a href="#PyInstaller.utils">PyInstaller.utils</a>
+ &#8226;   <a href="#PyInstaller.utils.misc">PyInstaller.utils.misc</a>
+ &#8226;   <a href="#PyInstaller.utils.osx">PyInstaller.utils.osx</a>
+ &#8226;   <a href="#PyInstaller.utils.win32">PyInstaller.utils.win32</a>
+ &#8226;   <a href="#PyInstaller.utils.win32.versioninfo">PyInstaller.utils.win32.versioninfo</a>
+ &#8226;   <a href="#fnmatch">fnmatch</a>
+ &#8226;   <a href="#glob">glob</a>
+ &#8226;   <a href="#hashlib">hashlib</a>
+ &#8226;   <a href="#marshal">marshal</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#platform">platform</a>
+ &#8226;   <a href="#py_compile">py_compile</a>
+ &#8226;   <a href="#shutil">shutil</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#subprocess">subprocess</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#zipfile">zipfile</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.depend.analysis">PyInstaller.depend.analysis</a>
+ &#8226;   <a href="#PyInstaller.depend.imphook">PyInstaller.depend.imphook</a>
+ &#8226;   <a href="#PyInstaller.depend.imphookapi">PyInstaller.depend.imphookapi</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.compat"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/compat.py" type="text/plain"><tt>PyInstaller.compat</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller._shared_with_waf">PyInstaller._shared_with_waf</a>
+ &#8226;   <a href="#PyInstaller.exceptions">PyInstaller.exceptions</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#ctypes.util">ctypes.util</a>
+ &#8226;   <a href="#errno">errno</a>
+ &#8226;   <a href="#importlib.machinery">importlib.machinery</a>
+ &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
+ &#8226;   <a href="#importlib.util">importlib.util</a>
+ &#8226;   <a href="#importlib_metadata">importlib_metadata</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#packaging.version">packaging.version</a>
+ &#8226;   <a href="#platform">platform</a>
+ &#8226;   <a href="#shutil">shutil</a>
+ &#8226;   <a href="#site">site</a>
+ &#8226;   <a href="#subprocess">subprocess</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#sysconfig">sysconfig</a>
+ &#8226;   <a href="#types">types</a>
+ &#8226;   <a href="#win32ctypes.pywin32">win32ctypes.pywin32</a>
+ &#8226;   <a href="#win32ctypes.pywin32.pywintypes">win32ctypes.pywin32.pywintypes</a>
+ &#8226;   <a href="#win32ctypes.pywin32.win32api">win32ctypes.pywin32.win32api</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.configure">PyInstaller.configure</a>
+ &#8226;   <a href="#PyInstaller.depend.analysis">PyInstaller.depend.analysis</a>
+ &#8226;   <a href="#PyInstaller.depend.bytecode">PyInstaller.depend.bytecode</a>
+ &#8226;   <a href="#PyInstaller.depend.imphook">PyInstaller.depend.imphook</a>
+ &#8226;   <a href="#PyInstaller.exceptions">PyInstaller.exceptions</a>
+ &#8226;   <a href="#PyInstaller.isolated._parent">PyInstaller.isolated._parent</a>
+ &#8226;   <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks.conda">PyInstaller.utils.hooks.conda</a>
+ &#8226;   <a href="#PyInstaller.utils.misc">PyInstaller.utils.misc</a>
+ &#8226;   <a href="#PyInstaller.utils.osx">PyInstaller.utils.osx</a>
+ &#8226;   <a href="#PyInstaller.utils.tests">PyInstaller.utils.tests</a>
+ &#8226;   <a href="#PyInstaller.utils.win32.versioninfo">PyInstaller.utils.win32.versioninfo</a>
+ &#8226;   <a href="#PyInstaller.utils.win32.winutils">PyInstaller.utils.win32.winutils</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.config"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/config.py" type="text/plain"><tt>PyInstaller.config</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.isolated._parent">PyInstaller.isolated._parent</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.configure"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/configure.py" type="text/plain"><tt>PyInstaller.configure</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.log">PyInstaller.log</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#subprocess">subprocess</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.depend"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/depend/__init__.py" type="text/plain"><tt>PyInstaller.depend</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.depend.bytecode">PyInstaller.depend.bytecode</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.depend.analysis">PyInstaller.depend.analysis</a>
+ &#8226;   <a href="#PyInstaller.depend.bytecode">PyInstaller.depend.bytecode</a>
+ &#8226;   <a href="#PyInstaller.depend.imphook">PyInstaller.depend.imphook</a>
+ &#8226;   <a href="#PyInstaller.depend.imphookapi">PyInstaller.depend.imphookapi</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.depend.analysis"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/depend/analysis.py" type="text/plain"><tt>PyInstaller.depend.analysis</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.depend">PyInstaller.depend</a>
+ &#8226;   <a href="#PyInstaller.depend.bytecode">PyInstaller.depend.bytecode</a>
+ &#8226;   <a href="#PyInstaller.depend.imphook">PyInstaller.depend.imphook</a>
+ &#8226;   <a href="#PyInstaller.depend.imphookapi">PyInstaller.depend.imphookapi</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.find_modules">PyInstaller.lib.modulegraph.find_modules</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
+ &#8226;   <a href="#PyInstaller.log">PyInstaller.log</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#ast">ast</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#copy">copy</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#traceback">traceback</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.depend.bytecode"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/depend/bytecode.py" type="text/plain"><tt>PyInstaller.depend.bytecode</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.depend">PyInstaller.depend</a>
+ &#8226;   <a href="#dis">dis</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#types">types</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.depend">PyInstaller.depend</a>
+ &#8226;   <a href="#PyInstaller.depend.analysis">PyInstaller.depend.analysis</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.depend.imphook"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/depend/imphook.py" type="text/plain"><tt>PyInstaller.depend.imphook</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.depend">PyInstaller.depend</a>
+ &#8226;   <a href="#PyInstaller.depend.imphookapi">PyInstaller.depend.imphookapi</a>
+ &#8226;   <a href="#PyInstaller.exceptions">PyInstaller.exceptions</a>
+ &#8226;   <a href="#PyInstaller.log">PyInstaller.log</a>
+ &#8226;   <a href="#glob">glob</a>
+ &#8226;   <a href="#os.path">os.path</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#weakref">weakref</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.depend.analysis">PyInstaller.depend.analysis</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.depend.imphookapi"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/depend/imphookapi.py" type="text/plain"><tt>PyInstaller.depend.imphookapi</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.depend">PyInstaller.depend</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.depend.analysis">PyInstaller.depend.analysis</a>
+ &#8226;   <a href="#PyInstaller.depend.imphook">PyInstaller.depend.imphook</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.exceptions"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/exceptions.py" type="text/plain"><tt>PyInstaller.exceptions</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.depend.imphook">PyInstaller.depend.imphook</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.isolated"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/isolated/__init__.py" type="text/plain"><tt>PyInstaller.isolated</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.isolated._parent">PyInstaller.isolated._parent</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.isolated._parent">PyInstaller.isolated._parent</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.isolated._parent"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/isolated/_parent.py" type="text/plain"><tt>PyInstaller.isolated._parent</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.config">PyInstaller.config</a>
+ &#8226;   <a href="#PyInstaller.isolated">PyInstaller.isolated</a>
+ &#8226;   <a href="#PyInstaller.log">PyInstaller.log</a>
+ &#8226;   <a href="#base64">base64</a>
+ &#8226;   <a href="#ctypes">ctypes</a>
+ &#8226;   <a href="#ctypes.wintypes">ctypes.wintypes</a>
+ &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#marshal">marshal</a>
+ &#8226;   <a href="#msvcrt">msvcrt</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#subprocess">subprocess</a>
+ &#8226;   <a href="#sys">sys</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.isolated">PyInstaller.isolated</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.lib"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/lib/__init__.py" type="text/plain"><tt>PyInstaller.lib</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.lib.modulegraph">PyInstaller.lib.modulegraph</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.lib.modulegraph"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/lib/modulegraph/__init__.py" type="text/plain"><tt>PyInstaller.lib.modulegraph</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#PyInstaller.lib">PyInstaller.lib</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph">PyInstaller.lib.modulegraph</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.util">PyInstaller.lib.modulegraph.util</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.lib.modulegraph">PyInstaller.lib.modulegraph</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.find_modules">PyInstaller.lib.modulegraph.find_modules</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.util">PyInstaller.lib.modulegraph.util</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.lib.modulegraph.find_modules"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/lib/modulegraph/find_modules.py" type="text/plain"><tt>PyInstaller.lib.modulegraph.find_modules</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller.lib.modulegraph">PyInstaller.lib.modulegraph</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#pkgutil">pkgutil</a>
+ &#8226;   <a href="#xml.etree">xml.etree</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.depend.analysis">PyInstaller.depend.analysis</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.lib.modulegraph.modulegraph"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/lib/modulegraph/modulegraph.py" type="text/plain"><tt>PyInstaller.lib.modulegraph.modulegraph</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller.lib.modulegraph">PyInstaller.lib.modulegraph</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.util">PyInstaller.lib.modulegraph.util</a>
+ &#8226;   <a href="#altgraph">altgraph</a>
+ &#8226;   <a href="#altgraph.ObjectGraph">altgraph.ObjectGraph</a>
+ &#8226;   <a href="#ast">ast</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#importlib._bootstrap_external">importlib._bootstrap_external</a>
+ &#8226;   <a href="#importlib.machinery">importlib.machinery</a>
+ &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
+ &#8226;   <a href="#importlib.util">importlib.util</a>
+ &#8226;   <a href="#importlib_metadata">importlib_metadata</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#pkgutil">pkgutil</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#urllib.request">urllib.request</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.depend.analysis">PyInstaller.depend.analysis</a>
+ &#8226;   <a href="#PyInstaller.depend.imphookapi">PyInstaller.depend.imphookapi</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.find_modules">PyInstaller.lib.modulegraph.find_modules</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.lib.modulegraph.util"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/lib/modulegraph/util.py" type="text/plain"><tt>PyInstaller.lib.modulegraph.util</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller.lib.modulegraph">PyInstaller.lib.modulegraph</a>
+ &#8226;   <a href="#dis">dis</a>
+ &#8226;   <a href="#inspect">inspect</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.lib.modulegraph">PyInstaller.lib.modulegraph</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.loader"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/loader/__init__.py" type="text/plain"><tt>PyInstaller.loader</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.loader.pyimod01_archive">PyInstaller.loader.pyimod01_archive</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.loader.pyimod01_archive"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/loader/pyimod01_archive.py" type="text/plain"><tt>PyInstaller.loader.pyimod01_archive</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller.loader">PyInstaller.loader</a>
+ &#8226;   <a href="#_frozen_importlib">_frozen_importlib</a>
+ &#8226;   <a href="#marshal">marshal</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#zlib">zlib</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.archive.readers">PyInstaller.archive.readers</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.log"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/log.py" type="text/plain"><tt>PyInstaller.log</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#os">os</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.configure">PyInstaller.configure</a>
+ &#8226;   <a href="#PyInstaller.depend.analysis">PyInstaller.depend.analysis</a>
+ &#8226;   <a href="#PyInstaller.depend.imphook">PyInstaller.depend.imphook</a>
+ &#8226;   <a href="#PyInstaller.isolated._parent">PyInstaller.isolated._parent</a>
+ &#8226;   <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks.conda">PyInstaller.utils.hooks.conda</a>
+ &#8226;   <a href="#PyInstaller.utils.misc">PyInstaller.utils.misc</a>
+ &#8226;   <a href="#PyInstaller.utils.osx">PyInstaller.utils.osx</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.utils"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/utils/__init__.py" type="text/plain"><tt>PyInstaller.utils</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.utils.misc">PyInstaller.utils.misc</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#PyInstaller.utils.misc">PyInstaller.utils.misc</a>
+ &#8226;   <a href="#PyInstaller.utils.osx">PyInstaller.utils.osx</a>
+ &#8226;   <a href="#PyInstaller.utils.tests">PyInstaller.utils.tests</a>
+ &#8226;   <a href="#PyInstaller.utils.win32">PyInstaller.utils.win32</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.utils.conftest"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/utils/conftest.py" type="text/plain"><tt>PyInstaller.utils.conftest</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#'setuptools._distutils.msvccompiler'">'setuptools._distutils.msvccompiler'</a>
+ &#8226;   <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.archive.readers">PyInstaller.archive.readers</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.configure">PyInstaller.configure</a>
+ &#8226;   <a href="#PyInstaller.depend.analysis">PyInstaller.depend.analysis</a>
+ &#8226;   <a href="#PyInstaller.log">PyInstaller.log</a>
+ &#8226;   <a href="#PyInstaller.utils">PyInstaller.utils</a>
+ &#8226;   <a href="#PyInstaller.utils.tests">PyInstaller.utils.tests</a>
+ &#8226;   <a href="#PyInstaller.utils.win32">PyInstaller.utils.win32</a>
+ &#8226;   <a href="#PyInstaller.utils.win32.winutils">PyInstaller.utils.win32.winutils</a>
+ &#8226;   <a href="#contextlib">contextlib</a>
+ &#8226;   <a href="#copy">copy</a>
+ &#8226;   <a href="#glob">glob</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#platform">platform</a>
+ &#8226;   <a href="#psutil">psutil</a>
+ &#8226;   <a href="#py">py</a>
+ &#8226;   <a href="#pytest">pytest</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#shutil">shutil</a>
+ &#8226;   <a href="#subprocess">subprocess</a>
+ &#8226;   <a href="#sys">sys</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#soundcard.__pyinstaller.conftest">soundcard.__pyinstaller.conftest</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.utils.hooks"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/utils/hooks/__init__.py" type="text/plain"><tt>PyInstaller.utils.hooks</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.config">PyInstaller.config</a>
+ &#8226;   <a href="#PyInstaller.depend.imphookapi">PyInstaller.depend.imphookapi</a>
+ &#8226;   <a href="#PyInstaller.isolated">PyInstaller.isolated</a>
+ &#8226;   <a href="#PyInstaller.log">PyInstaller.log</a>
+ &#8226;   <a href="#PyInstaller.utils">PyInstaller.utils</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks.conda">PyInstaller.utils.hooks.conda</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#copy">copy</a>
+ &#8226;   <a href="#fnmatch">fnmatch</a>
+ &#8226;   <a href="#importlib">importlib</a>
+ &#8226;   <a href="#importlib.util">importlib.util</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#packaging.requirements">packaging.requirements</a>
+ &#8226;   <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#pkgutil">pkgutil</a>
+ &#8226;   <a href="#subprocess">subprocess</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#textwrap">textwrap</a>
+ &#8226;   <a href="#traceback">traceback</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.depend.analysis">PyInstaller.depend.analysis</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks.conda">PyInstaller.utils.hooks.conda</a>
+ &#8226;   <a href="#PyInstaller.utils.tests">PyInstaller.utils.tests</a>
+ &#8226;   <a href="#soundcard.__pyinstaller.hook-soundcard">soundcard.__pyinstaller.hook-soundcard</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.utils.hooks.conda"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/utils/hooks/conda.py" type="text/plain"><tt>PyInstaller.utils.hooks.conda</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.log">PyInstaller.log</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#fnmatch">fnmatch</a>
+ &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
+ &#8226;   <a href="#json">json</a>
+ &#8226;   <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.utils.misc"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/utils/misc.py" type="text/plain"><tt>PyInstaller.utils.misc</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.log">PyInstaller.log</a>
+ &#8226;   <a href="#PyInstaller.utils">PyInstaller.utils</a>
+ &#8226;   <a href="#PyInstaller.utils.win32">PyInstaller.utils.win32</a>
+ &#8226;   <a href="#PyInstaller.utils.win32.versioninfo">PyInstaller.utils.win32.versioninfo</a>
+ &#8226;   <a href="#codecs">codecs</a>
+ &#8226;   <a href="#glob">glob</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#pprint">pprint</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#tokenize">tokenize</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.utils">PyInstaller.utils</a>
+ &#8226;   <a href="#PyInstaller.utils.win32.versioninfo">PyInstaller.utils.win32.versioninfo</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.utils.osx"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/utils/osx.py" type="text/plain"><tt>PyInstaller.utils.osx</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#'macholib.MachO'">'macholib.MachO'</a>
+ &#8226;   <a href="#'macholib.mach_o'">'macholib.mach_o'</a>
+ &#8226;   <a href="#'macholib.util'">'macholib.util'</a>
+ &#8226;   <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.log">PyInstaller.log</a>
+ &#8226;   <a href="#PyInstaller.utils">PyInstaller.utils</a>
+ &#8226;   <a href="#macholib">macholib</a>
+ &#8226;   <a href="#math">math</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#shutil">shutil</a>
+ &#8226;   <a href="#subprocess">subprocess</a>
+ &#8226;   <a href="#tempfile">tempfile</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.utils.tests"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/utils/tests.py" type="text/plain"><tt>PyInstaller.utils.tests</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.utils">PyInstaller.utils</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#importlib.util">importlib.util</a>
+ &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#pytest">pytest</a>
+ &#8226;   <a href="#setuptools._distutils.ccompiler">setuptools._distutils.ccompiler</a>
+ &#8226;   <a href="#shutil">shutil</a>
+ &#8226;   <a href="#subprocess">subprocess</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#tempfile">tempfile</a>
+ &#8226;   <a href="#textwrap">textwrap</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.utils.win32"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/utils/win32/__init__.py" type="text/plain"><tt>PyInstaller.utils.win32</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#PyInstaller.utils">PyInstaller.utils</a>
+ &#8226;   <a href="#PyInstaller.utils.win32.versioninfo">PyInstaller.utils.win32.versioninfo</a>
+ &#8226;   <a href="#PyInstaller.utils.win32.winutils">PyInstaller.utils.win32.winutils</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+ &#8226;   <a href="#PyInstaller.utils.misc">PyInstaller.utils.misc</a>
+ &#8226;   <a href="#PyInstaller.utils.win32.versioninfo">PyInstaller.utils.win32.versioninfo</a>
+ &#8226;   <a href="#PyInstaller.utils.win32.winutils">PyInstaller.utils.win32.winutils</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.utils.win32.versioninfo"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/utils/win32/versioninfo.py" type="text/plain"><tt>PyInstaller.utils.win32.versioninfo</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.utils.misc">PyInstaller.utils.misc</a>
+ &#8226;   <a href="#PyInstaller.utils.win32">PyInstaller.utils.win32</a>
+ &#8226;   <a href="#pefile">pefile</a>
+ &#8226;   <a href="#struct">struct</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.utils.misc">PyInstaller.utils.misc</a>
+ &#8226;   <a href="#PyInstaller.utils.win32">PyInstaller.utils.win32</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PyInstaller.utils.win32.winutils"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PyInstaller/utils/win32/winutils.py" type="text/plain"><tt>PyInstaller.utils.win32.winutils</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.utils.win32">PyInstaller.utils.win32</a>
+ &#8226;   <a href="#ctypes">ctypes</a>
+ &#8226;   <a href="#ctypes.wintypes">ctypes.wintypes</a>
+ &#8226;   <a href="#pefile">pefile</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+ &#8226;   <a href="#PyInstaller.utils.win32">PyInstaller.utils.win32</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="PySide6"></a>
   <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/PySide6/__init__.py" type="text/plain"><tt>PySide6</tt></a>
 <span class="moduletype">Package</span>  <div class="import">
@@ -3893,6 +4848,9 @@ imported by:
  &#8226;   <a href="#PIL._util">PIL._util</a>
  &#8226;   <a href="#PIL._version">PIL._version</a>
  &#8226;   <a href="#PIL.features">PIL.features</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks.conda">PyInstaller.utils.hooks.conda</a>
  &#8226;   <a href="#PySide6.support">PySide6.support</a>
  &#8226;   <a href="#PySide6.support.deprecated">PySide6.support.deprecated</a>
  &#8226;   <a href="#_colorize">_colorize</a>
@@ -4147,6 +5105,9 @@ imported by:
  &#8226;   <a href="#setuptools._distutils.util">setuptools._distutils.util</a>
  &#8226;   <a href="#setuptools._path">setuptools._path</a>
  &#8226;   <a href="#setuptools._reqs">setuptools._reqs</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._meta">setuptools._vendor.importlib_metadata._meta</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat.py39">setuptools._vendor.importlib_metadata.compat.py39</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.context">setuptools._vendor.jaraco.context</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.functools">setuptools._vendor.jaraco.functools</a>
  &#8226;   <a href="#setuptools._vendor.packaging._elffile">setuptools._vendor.packaging._elffile</a>
@@ -4658,7 +5619,8 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>_frozen_importlib</tt></a>
 <span class="moduletype">ExcludedModule</span>  <div class="import">
 imported by:
-    <a href="#importlib">importlib</a>
+    <a href="#PyInstaller.loader.pyimod01_archive">PyInstaller.loader.pyimod01_archive</a>
+ &#8226;   <a href="#importlib">importlib</a>
  &#8226;   <a href="#importlib.abc">importlib.abc</a>
  &#8226;   <a href="#zipimport">zipimport</a>
 
@@ -6171,6 +7133,7 @@ imported by:
  &#8226;   <a href="#selectors">selectors</a>
  &#8226;   <a href="#setuptools">setuptools</a>
  &#8226;   <a href="#setuptools._distutils.cmd">setuptools._distutils.cmd</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
  &#8226;   <a href="#setuptools._vendor.packaging.specifiers">setuptools._vendor.packaging.specifiers</a>
  &#8226;   <a href="#setuptools.config.setupcfg">setuptools.config.setupcfg</a>
  &#8226;   <a href="#typing">typing</a>
@@ -6196,6 +7159,75 @@ imported by:
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
     <a href="#fsspec.implementations.http">fsspec.implementations.http</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="altgraph"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/altgraph/__init__.py" type="text/plain"><tt>altgraph</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imported by:
+    <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
+ &#8226;   <a href="#altgraph.Graph">altgraph.Graph</a>
+ &#8226;   <a href="#altgraph.GraphUtil">altgraph.GraphUtil</a>
+ &#8226;   <a href="#altgraph.ObjectGraph">altgraph.ObjectGraph</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="altgraph.Graph"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/altgraph/Graph.py" type="text/plain"><tt>altgraph.Graph</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#altgraph">altgraph</a>
+ &#8226;   <a href="#collections">collections</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#altgraph.GraphUtil">altgraph.GraphUtil</a>
+ &#8226;   <a href="#altgraph.ObjectGraph">altgraph.ObjectGraph</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="altgraph.GraphUtil"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/altgraph/GraphUtil.py" type="text/plain"><tt>altgraph.GraphUtil</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#altgraph">altgraph</a>
+ &#8226;   <a href="#altgraph.Graph">altgraph.Graph</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#random">random</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#altgraph.ObjectGraph">altgraph.ObjectGraph</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="altgraph.ObjectGraph"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/altgraph/ObjectGraph.py" type="text/plain"><tt>altgraph.ObjectGraph</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#altgraph">altgraph</a>
+ &#8226;   <a href="#altgraph.Graph">altgraph.Graph</a>
+ &#8226;   <a href="#altgraph.GraphUtil">altgraph.GraphUtil</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
 
   </div>
 
@@ -7302,7 +8334,7 @@ imported by:
 
 <div class="node">
   <a name="app"></a>
-  <a target="code" href="///D:/InterviewAssistant/app/__init__.py" type="text/plain"><tt>app</tt></a>
+  <a target="code" href="///D:/CocosProjects/Test_Program/app/__init__.py" type="text/plain"><tt>app</tt></a>
 <span class="moduletype">Package</span>  <div class="import">
 imported by:
     <a href="#app.audio_recorder">app.audio_recorder</a>
@@ -7318,7 +8350,7 @@ imported by:
 
 <div class="node">
   <a name="app.audio_recorder"></a>
-  <a target="code" href="///D:/InterviewAssistant/app/audio_recorder.py" type="text/plain"><tt>app.audio_recorder</tt></a>
+  <a target="code" href="///D:/CocosProjects/Test_Program/app/audio_recorder.py" type="text/plain"><tt>app.audio_recorder</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#app">app</a>
@@ -7326,7 +8358,9 @@ imports:
  &#8226;   <a href="#numpy">numpy</a>
  &#8226;   <a href="#pathlib">pathlib</a>
  &#8226;   <a href="#scipy.io.wavfile">scipy.io.wavfile</a>
+ &#8226;   <a href="#soundcard">soundcard</a>
  &#8226;   <a href="#sounddevice">sounddevice</a>
+ &#8226;   <a href="#typing">typing</a>
 
   </div>
   <div class="import">
@@ -7339,7 +8373,7 @@ imported by:
 
 <div class="node">
   <a name="app.config"></a>
-  <a target="code" href="///D:/InterviewAssistant/app/config.py" type="text/plain"><tt>app.config</tt></a>
+  <a target="code" href="///D:/CocosProjects/Test_Program/app/config.py" type="text/plain"><tt>app.config</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#app">app</a>
@@ -7360,7 +8394,7 @@ imported by:
 
 <div class="node">
   <a name="app.qa_loader"></a>
-  <a target="code" href="///D:/InterviewAssistant/app/qa_loader.py" type="text/plain"><tt>app.qa_loader</tt></a>
+  <a target="code" href="///D:/CocosProjects/Test_Program/app/qa_loader.py" type="text/plain"><tt>app.qa_loader</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#app">app</a>
@@ -7380,12 +8414,13 @@ imported by:
 
 <div class="node">
   <a name="app.search_engine"></a>
-  <a target="code" href="///D:/InterviewAssistant/app/search_engine.py" type="text/plain"><tt>app.search_engine</tt></a>
+  <a target="code" href="///D:/CocosProjects/Test_Program/app/search_engine.py" type="text/plain"><tt>app.search_engine</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#app">app</a>
  &#8226;   <a href="#app.config">app.config</a>
  &#8226;   <a href="#app.qa_loader">app.qa_loader</a>
+ &#8226;   <a href="#html">html</a>
  &#8226;   <a href="#rapidfuzz">rapidfuzz</a>
  &#8226;   <a href="#rapidfuzz.fuzz">rapidfuzz.fuzz</a>
  &#8226;   <a href="#typing">typing</a>
@@ -7401,13 +8436,15 @@ imported by:
 
 <div class="node">
   <a name="app.speech_to_text"></a>
-  <a target="code" href="///D:/InterviewAssistant/app/speech_to_text.py" type="text/plain"><tt>app.speech_to_text</tt></a>
+  <a target="code" href="///D:/CocosProjects/Test_Program/app/speech_to_text.py" type="text/plain"><tt>app.speech_to_text</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#app">app</a>
  &#8226;   <a href="#app.config">app.config</a>
  &#8226;   <a href="#faster_whisper">faster_whisper</a>
  &#8226;   <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#threading">threading</a>
 
   </div>
   <div class="import">
@@ -7420,7 +8457,7 @@ imported by:
 
 <div class="node">
   <a name="app.ui"></a>
-  <a target="code" href="///D:/InterviewAssistant/app/ui.py" type="text/plain"><tt>app.ui</tt></a>
+  <a target="code" href="///D:/CocosProjects/Test_Program/app/ui.py" type="text/plain"><tt>app.ui</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#PySide6.QtCore">PySide6.QtCore</a>
@@ -7535,7 +8572,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_pyrepl.console">_pyrepl.console</a>
+    <a href="#PyInstaller.depend.analysis">PyInstaller.depend.analysis</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
+ &#8226;   <a href="#_pyrepl.console">_pyrepl.console</a>
  &#8226;   <a href="#fsspec.gui">fsspec.gui</a>
  &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#numpy._core._internal">numpy._core._internal</a>
@@ -8540,6 +9579,7 @@ imported by:
  &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
  &#8226;   <a href="#rlcompleter">rlcompleter</a>
  &#8226;   <a href="#site">site</a>
+ &#8226;   <a href="#soundcard.pulseaudio">soundcard.pulseaudio</a>
  &#8226;   <a href="#sounddevice">sounddevice</a>
  &#8226;   <a href="#tqdm._monitor">tqdm._monitor</a>
  &#8226;   <a href="#weakref">weakref</a>
@@ -9676,7 +10716,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#email._encoded_words">email._encoded_words</a>
+    <a href="#PyInstaller.isolated._parent">PyInstaller.isolated._parent</a>
+ &#8226;   <a href="#email._encoded_words">email._encoded_words</a>
  &#8226;   <a href="#email.base64mime">email.base64mime</a>
  &#8226;   <a href="#email.encoders">email.encoders</a>
  &#8226;   <a href="#encodings.base64_codec">encodings.base64_codec</a>
@@ -9992,6 +11033,11 @@ imported by:
  &#8226;   <a href="#cffi.vengine_gen">cffi.vengine_gen</a>
  &#8226;   <a href="#cffi.verifier">cffi.verifier</a>
  &#8226;   <a href="#scipy._lib._ccallback">scipy._lib._ccallback</a>
+ &#8226;   <a href="#soundcard.coreaudio">soundcard.coreaudio</a>
+ &#8226;   <a href="#soundcard.mediafoundation">soundcard.mediafoundation</a>
+ &#8226;   <a href="#soundcard.pulseaudio">soundcard.pulseaudio</a>
+ &#8226;   <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._util">win32ctypes.core.cffi._util</a>
 
   </div>
 
@@ -11197,6 +12243,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#PIL.PdfParser">PIL.PdfParser</a>
+ &#8226;   <a href="#PyInstaller.utils.misc">PyInstaller.utils.misc</a>
  &#8226;   <a href="#_pickle">_pickle</a>
  &#8226;   <a href="#charset_normalizer.constant">charset_normalizer.constant</a>
  &#8226;   <a href="#charset_normalizer.utils">charset_normalizer.utils</a>
@@ -11327,6 +12374,7 @@ imported by:
  &#8226;   <a href="#json">json</a>
  &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#numpy.f2py.crackfortran">numpy.f2py.crackfortran</a>
+ &#8226;   <a href="#pefile">pefile</a>
  &#8226;   <a href="#pickle">pickle</a>
  &#8226;   <a href="#requests.utils">requests.utils</a>
  &#8226;   <a href="#tokenize">tokenize</a>
@@ -11377,10 +12425,16 @@ imports:
 imported by:
     <a href="#PIL.PdfParser">PIL.PdfParser</a>
  &#8226;   <a href="#PIL.features">PIL.features</a>
+ &#8226;   <a href="#PyInstaller.depend.analysis">PyInstaller.depend.analysis</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks.conda">PyInstaller.utils.hooks.conda</a>
  &#8226;   <a href="#_pydecimal">_pydecimal</a>
  &#8226;   <a href="#_pyrepl.base_eventqueue">_pyrepl.base_eventqueue</a>
  &#8226;   <a href="#_pyrepl.input">_pyrepl.input</a>
  &#8226;   <a href="#_pyrepl.windows_console">_pyrepl.windows_console</a>
+ &#8226;   <a href="#altgraph.Graph">altgraph.Graph</a>
+ &#8226;   <a href="#altgraph.GraphUtil">altgraph.GraphUtil</a>
  &#8226;   <a href="#anyio._backends._asyncio">anyio._backends._asyncio</a>
  &#8226;   <a href="#anyio._core._synchronization">anyio._core._synchronization</a>
  &#8226;   <a href="#anyio.streams.memory">anyio.streams.memory</a>
@@ -11433,6 +12487,7 @@ imported by:
  &#8226;   <a href="#numpy._core.records">numpy._core.records</a>
  &#8226;   <a href="#onnxruntime.capi.onnxruntime_inference_collection">onnxruntime.capi.onnxruntime_inference_collection</a>
  &#8226;   <a href="#packaging._manylinux">packaging._manylinux</a>
+ &#8226;   <a href="#pefile">pefile</a>
  &#8226;   <a href="#pkgutil">pkgutil</a>
  &#8226;   <a href="#platform">platform</a>
  &#8226;   <a href="#pprint">pprint</a>
@@ -11463,14 +12518,20 @@ imported by:
  &#8226;   <a href="#scipy.stats._mstats_basic">scipy.stats._mstats_basic</a>
  &#8226;   <a href="#scipy.stats._stats_py">scipy.stats._stats_py</a>
  &#8226;   <a href="#selectors">selectors</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._collections">setuptools._vendor.importlib_metadata._collections</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._itertools">setuptools._vendor.importlib_metadata._itertools</a>
  &#8226;   <a href="#setuptools._vendor.more_itertools.more">setuptools._vendor.more_itertools.more</a>
  &#8226;   <a href="#setuptools._vendor.more_itertools.recipes">setuptools._vendor.more_itertools.recipes</a>
  &#8226;   <a href="#setuptools._vendor.packaging._manylinux">setuptools._vendor.packaging._manylinux</a>
+ &#8226;   <a href="#setuptools._vendor.zipp._functools">setuptools._vendor.zipp._functools</a>
  &#8226;   <a href="#setuptools.command._requirestxt">setuptools.command._requirestxt</a>
  &#8226;   <a href="#setuptools.config._validate_pyproject.extra_validations">setuptools.config._validate_pyproject.extra_validations</a>
  &#8226;   <a href="#setuptools.config.setupcfg">setuptools.config.setupcfg</a>
  &#8226;   <a href="#shlex">shlex</a>
  &#8226;   <a href="#shutil">shutil</a>
+ &#8226;   <a href="#soundcard.coreaudio">soundcard.coreaudio</a>
+ &#8226;   <a href="#soundcard.mediafoundation">soundcard.mediafoundation</a>
  &#8226;   <a href="#ssl">ssl</a>
  &#8226;   <a href="#statistics">statistics</a>
  &#8226;   <a href="#string">string</a>
@@ -11486,6 +12547,7 @@ imported by:
  &#8226;   <a href="#urllib.parse">urllib.parse</a>
  &#8226;   <a href="#urllib3._collections">urllib3._collections</a>
  &#8226;   <a href="#urllib3.response">urllib3.response</a>
+ &#8226;   <a href="#win32ctypes.pywin32.pywintypes">win32ctypes.pywin32.pywintypes</a>
  &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
  &#8226;   <a href="#yaml.representer">yaml.representer</a>
 
@@ -11815,7 +12877,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_aix_support">_aix_support</a>
+    <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+ &#8226;   <a href="#_aix_support">_aix_support</a>
  &#8226;   <a href="#_pyrepl.historical_reader">_pyrepl.historical_reader</a>
  &#8226;   <a href="#_pyrepl.reader">_pyrepl.reader</a>
  &#8226;   <a href="#_threading_local">_threading_local</a>
@@ -11907,6 +12970,7 @@ imported by:
  &#8226;   <a href="#setuptools._distutils.dist">setuptools._distutils.dist</a>
  &#8226;   <a href="#setuptools._distutils.version">setuptools._distutils.version</a>
  &#8226;   <a href="#setuptools._path">setuptools._path</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.context">setuptools._vendor.jaraco.context</a>
  &#8226;   <a href="#setuptools._vendor.more_itertools.more">setuptools._vendor.more_itertools.more</a>
  &#8226;   <a href="#setuptools._vendor.more_itertools.recipes">setuptools._vendor.more_itertools.recipes</a>
@@ -11932,6 +12996,7 @@ imported by:
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#urllib3.contrib.emscripten.response">urllib3.contrib.emscripten.response</a>
  &#8226;   <a href="#urllib3.response">urllib3.response</a>
+ &#8226;   <a href="#win32ctypes.pywin32.pywintypes">win32ctypes.pywin32.pywintypes</a>
  &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
  &#8226;   <a href="#zipfile._path">zipfile._path</a>
 
@@ -11980,6 +13045,9 @@ imports:
   <div class="import">
 imported by:
     <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
+ &#8226;   <a href="#PyInstaller.depend.analysis">PyInstaller.depend.analysis</a>
+ &#8226;   <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
  &#8226;   <a href="#_sre">_sre</a>
  &#8226;   <a href="#argparse">argparse</a>
  &#8226;   <a href="#collections">collections</a>
@@ -12002,6 +13070,7 @@ imported by:
  &#8226;   <a href="#numpy.f2py.func2subr">numpy.f2py.func2subr</a>
  &#8226;   <a href="#numpy.f2py.rules">numpy.f2py.rules</a>
  &#8226;   <a href="#numpy.ma.core">numpy.ma.core</a>
+ &#8226;   <a href="#pefile">pefile</a>
  &#8226;   <a href="#requests.cookies">requests.cookies</a>
  &#8226;   <a href="#scipy._lib._docscrape">scipy._lib._docscrape</a>
  &#8226;   <a href="#scipy._lib.cobyqa.problem">scipy._lib.cobyqa.problem</a>
@@ -12085,6 +13154,7 @@ imports:
 imported by:
     <a href="#importlib.metadata">importlib.metadata</a>
  &#8226;   <a href="#scipy.io.arff._arffread">scipy.io.arff._arffread</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
  &#8226;   <a href="#setuptools._vendor.wheel.wheelfile">setuptools._vendor.wheel.wheelfile</a>
 
   </div>
@@ -12781,7 +13851,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_ios_support">_ios_support</a>
+    <a href="#PyInstaller.isolated._parent">PyInstaller.isolated._parent</a>
+ &#8226;   <a href="#PyInstaller.utils.win32.winutils">PyInstaller.utils.win32.winutils</a>
+ &#8226;   <a href="#_ios_support">_ios_support</a>
  &#8226;   <a href="#_pyrepl._minimal_curses">_pyrepl._minimal_curses</a>
  &#8226;   <a href="#_pyrepl.windows_console">_pyrepl.windows_console</a>
  &#8226;   <a href="#click._winconsole">click._winconsole</a>
@@ -12813,6 +13885,12 @@ imported by:
  &#8226;   <a href="#setuptools._vendor.wheel.macosx_libfile">setuptools._vendor.wheel.macosx_libfile</a>
  &#8226;   <a href="#setuptools.windows_support">setuptools.windows_support</a>
  &#8226;   <a href="#webbrowser">webbrowser</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._authentication">win32ctypes.core.ctypes._authentication</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._common">win32ctypes.core.ctypes._common</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._resource">win32ctypes.core.ctypes._resource</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._system_information">win32ctypes.core.ctypes._system_information</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._util">win32ctypes.core.ctypes._util</a>
+ &#8226;   <a href="#win32ctypes.pywin32.win32cred">win32ctypes.pywin32.win32cred</a>
 
   </div>
 
@@ -12948,7 +14026,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_ios_support">_ios_support</a>
+    <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#_ios_support">_ios_support</a>
  &#8226;   <a href="#_pyrepl._minimal_curses">_pyrepl._minimal_curses</a>
  &#8226;   <a href="#cffi.api">cffi.api</a>
  &#8226;   <a href="#ctypes">ctypes</a>
@@ -12968,12 +14047,21 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_pyrepl.windows_console">_pyrepl.windows_console</a>
+    <a href="#PyInstaller.isolated._parent">PyInstaller.isolated._parent</a>
+ &#8226;   <a href="#PyInstaller.utils.win32.winutils">PyInstaller.utils.win32.winutils</a>
+ &#8226;   <a href="#_pyrepl.windows_console">_pyrepl.windows_console</a>
  &#8226;   <a href="#click._winconsole">click._winconsole</a>
  &#8226;   <a href="#colorama.win32">colorama.win32</a>
  &#8226;   <a href="#filelock._soft">filelock._soft</a>
  &#8226;   <a href="#filelock._windows">filelock._windows</a>
  &#8226;   <a href="#setuptools.windows_support">setuptools.windows_support</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._authentication">win32ctypes.core.ctypes._authentication</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._common">win32ctypes.core.ctypes._common</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._dll">win32ctypes.core.ctypes._dll</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._nl_support">win32ctypes.core.ctypes._nl_support</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._resource">win32ctypes.core.ctypes._resource</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._system_information">win32ctypes.core.ctypes._system_information</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._time">win32ctypes.core.ctypes._time</a>
 
   </div>
 
@@ -13228,6 +14316,7 @@ imported by:
  &#8226;   <a href="#tomllib._re">tomllib._re</a>
  &#8226;   <a href="#tqdm.std">tqdm.std</a>
  &#8226;   <a href="#urllib3.connection">urllib3.connection</a>
+ &#8226;   <a href="#win32ctypes.pywin32.pywintypes">win32ctypes.pywin32.pywintypes</a>
  &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
  &#8226;   <a href="#yaml.constructor">yaml.constructor</a>
  &#8226;   <a href="#yaml.representer">yaml.representer</a>
@@ -13310,7 +14399,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#inspect">inspect</a>
+    <a href="#PyInstaller.depend.bytecode">PyInstaller.depend.bytecode</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.util">PyInstaller.lib.modulegraph.util</a>
+ &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#pdb">pdb</a>
  &#8226;   <a href="#setuptools.depends">setuptools.depends</a>
 
@@ -13476,6 +14567,7 @@ imported by:
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
  &#8226;   <a href="#setuptools._core_metadata">setuptools._core_metadata</a>
  &#8226;   <a href="#setuptools._distutils.dist">setuptools._distutils.dist</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
  &#8226;   <a href="#setuptools.wheel">setuptools.wheel</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#urllib3.util.retry">urllib3.util.retry</a>
@@ -13823,6 +14915,7 @@ imported by:
  &#8226;   <a href="#importlib.metadata._adapters">importlib.metadata._adapters</a>
  &#8226;   <a href="#pydoc">pydoc</a>
  &#8226;   <a href="#setuptools._core_metadata">setuptools._core_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._adapters">setuptools._vendor.importlib_metadata._adapters</a>
  &#8226;   <a href="#setuptools.command.bdist_wheel">setuptools.command.bdist_wheel</a>
  &#8226;   <a href="#setuptools.config._validate_pyproject.formats">setuptools.config._validate_pyproject.formats</a>
 
@@ -13869,6 +14962,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#email.message">email.message</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._adapters">setuptools._vendor.importlib_metadata._adapters</a>
 
   </div>
 
@@ -16555,7 +17649,8 @@ imported by:
   <a name="errno"></a>
   <tt>errno</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
-    <a href="#_pyrepl.main">_pyrepl.main</a>
+    <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#_pyrepl.main">_pyrepl.main</a>
  &#8226;   <a href="#_pyrepl.unix_console">_pyrepl.unix_console</a>
  &#8226;   <a href="#anyio._core._sockets">anyio._core._sockets</a>
  &#8226;   <a href="#anyio.abc._sockets">anyio.abc._sockets</a>
@@ -17343,7 +18438,10 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#bdb">bdb</a>
+    <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks.conda">PyInstaller.utils.hooks.conda</a>
+ &#8226;   <a href="#bdb">bdb</a>
  &#8226;   <a href="#glob">glob</a>
  &#8226;   <a href="#huggingface_hub._buckets">huggingface_hub._buckets</a>
  &#8226;   <a href="#huggingface_hub.cli.jobs">huggingface_hub.cli.jobs</a>
@@ -18856,6 +19954,7 @@ imported by:
  &#8226;   <a href="#PIL.ImageMode">PIL.ImageMode</a>
  &#8226;   <a href="#PIL.ImageOps">PIL.ImageOps</a>
  &#8226;   <a href="#PIL.PsdImagePlugin">PIL.PsdImagePlugin</a>
+ &#8226;   <a href="#PyInstaller.isolated._parent">PyInstaller.isolated._parent</a>
  &#8226;   <a href="#_pyrepl.simple_interact">_pyrepl.simple_interact</a>
  &#8226;   <a href="#_pyrepl.utils">_pyrepl.utils</a>
  &#8226;   <a href="#anyio._backends._asyncio">anyio._backends._asyncio</a>
@@ -18961,6 +20060,7 @@ imported by:
  &#8226;   <a href="#packaging.specifiers">packaging.specifiers</a>
  &#8226;   <a href="#packaging.version">packaging.version</a>
  &#8226;   <a href="#pathlib._abc">pathlib._abc</a>
+ &#8226;   <a href="#pefile">pefile</a>
  &#8226;   <a href="#pickle">pickle</a>
  &#8226;   <a href="#pkgutil">pkgutil</a>
  &#8226;   <a href="#platform">platform</a>
@@ -19006,6 +20106,9 @@ imported by:
  &#8226;   <a href="#setuptools._entry_points">setuptools._entry_points</a>
  &#8226;   <a href="#setuptools._reqs">setuptools._reqs</a>
  &#8226;   <a href="#setuptools._static">setuptools._static</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._functools">setuptools._vendor.importlib_metadata._functools</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._typing">setuptools._vendor.importlib_metadata._typing</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.context">setuptools._vendor.jaraco.context</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.functools">setuptools._vendor.jaraco.functools</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.text">setuptools._vendor.jaraco.text</a>
@@ -19015,6 +20118,9 @@ imported by:
  &#8226;   <a href="#setuptools._vendor.packaging._musllinux">setuptools._vendor.packaging._musllinux</a>
  &#8226;   <a href="#setuptools._vendor.packaging.version">setuptools._vendor.packaging.version</a>
  &#8226;   <a href="#setuptools._vendor.tomli._re">setuptools._vendor.tomli._re</a>
+ &#8226;   <a href="#setuptools._vendor.zipp">setuptools._vendor.zipp</a>
+ &#8226;   <a href="#setuptools._vendor.zipp._functools">setuptools._vendor.zipp._functools</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.compat.py313">setuptools._vendor.zipp.compat.py313</a>
  &#8226;   <a href="#setuptools.command.egg_info">setuptools.command.egg_info</a>
  &#8226;   <a href="#setuptools.config">setuptools.config</a>
  &#8226;   <a href="#setuptools.config._apply_pyprojecttoml">setuptools.config._apply_pyprojecttoml</a>
@@ -19201,7 +20307,11 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#click.utils">click.utils</a>
+    <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.depend.imphook">PyInstaller.depend.imphook</a>
+ &#8226;   <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+ &#8226;   <a href="#PyInstaller.utils.misc">PyInstaller.utils.misc</a>
+ &#8226;   <a href="#click.utils">click.utils</a>
  &#8226;   <a href="#ctranslate2">ctranslate2</a>
  &#8226;   <a href="#fsspec.asyn">fsspec.asyn</a>
  &#8226;   <a href="#fsspec.core">fsspec.core</a>
@@ -19558,7 +20668,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#fsspec.implementations.cache_mapper">fsspec.implementations.cache_mapper</a>
+    <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#fsspec.implementations.cache_mapper">fsspec.implementations.cache_mapper</a>
  &#8226;   <a href="#fsspec.spec">fsspec.spec</a>
  &#8226;   <a href="#fsspec.utils">fsspec.utils</a>
  &#8226;   <a href="#hmac">hmac</a>
@@ -19568,6 +20679,7 @@ imported by:
  &#8226;   <a href="#huggingface_hub._oauth">huggingface_hub._oauth</a>
  &#8226;   <a href="#huggingface_hub._sandbox">huggingface_hub._sandbox</a>
  &#8226;   <a href="#huggingface_hub.utils.insecure_hashlib">huggingface_hub.utils.insecure_hashlib</a>
+ &#8226;   <a href="#pefile">pefile</a>
  &#8226;   <a href="#random">random</a>
  &#8226;   <a href="#requests.auth">requests.auth</a>
  &#8226;   <a href="#setuptools._vendor.wheel.wheelfile">setuptools._vendor.wheel.wheelfile</a>
@@ -19715,7 +20827,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#html.entities">html.entities</a>
+    <a href="#app.search_engine">app.search_engine</a>
+ &#8226;   <a href="#html.entities">html.entities</a>
  &#8226;   <a href="#http.server">http.server</a>
  &#8226;   <a href="#huggingface_hub._login">huggingface_hub._login</a>
  &#8226;   <a href="#tqdm.notebook">tqdm.notebook</a>
@@ -26960,7 +28073,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_distutils_hack">_distutils_hack</a>
+    <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#_distutils_hack">_distutils_hack</a>
  &#8226;   <a href="#_pyi_rth_utils.qt">_pyi_rth_utils.qt</a>
  &#8226;   <a href="#anyio._core._eventloop">anyio._core._eventloop</a>
  &#8226;   <a href="#cffi._imp_emulation">cffi._imp_emulation</a>
@@ -26988,8 +28102,11 @@ imported by:
  &#8226;   <a href="#scipy._lib._uarray._backend">scipy._lib._uarray._backend</a>
  &#8226;   <a href="#scipy._lib.deprecation">scipy._lib.deprecation</a>
  &#8226;   <a href="#setuptools._distutils">setuptools._distutils</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.compat.overlay">setuptools._vendor.zipp.compat.overlay</a>
  &#8226;   <a href="#setuptools.config.expand">setuptools.config.expand</a>
  &#8226;   <a href="#tqdm.cli">tqdm.cli</a>
+ &#8226;   <a href="#win32ctypes.core">win32ctypes.core</a>
 
   </div>
 
@@ -27057,7 +28174,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#importlib">importlib</a>
+    <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
+ &#8226;   <a href="#importlib">importlib</a>
  &#8226;   <a href="#importlib.abc">importlib.abc</a>
  &#8226;   <a href="#importlib.machinery">importlib.machinery</a>
  &#8226;   <a href="#importlib.util">importlib.util</a>
@@ -27089,6 +28207,8 @@ imports:
 imported by:
     <a href="#_distutils_hack">_distutils_hack</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#win32ctypes.core">win32ctypes.core</a>
 
   </div>
 
@@ -27106,7 +28226,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#cffi._imp_emulation">cffi._imp_emulation</a>
+    <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
+ &#8226;   <a href="#cffi._imp_emulation">cffi._imp_emulation</a>
  &#8226;   <a href="#cffi.verifier">cffi.verifier</a>
  &#8226;   <a href="#ctypes.util">ctypes.util</a>
  &#8226;   <a href="#importlib.abc">importlib.abc</a>
@@ -27163,7 +28285,10 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#click">click</a>
+    <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks.conda">PyInstaller.utils.hooks.conda</a>
+ &#8226;   <a href="#click">click</a>
  &#8226;   <a href="#click.decorators">click.decorators</a>
  &#8226;   <a href="#fsspec">fsspec</a>
  &#8226;   <a href="#fsspec.utils">fsspec.utils</a>
@@ -27505,7 +28630,11 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_distutils_hack">_distutils_hack</a>
+    <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#PyInstaller.utils.tests">PyInstaller.utils.tests</a>
+ &#8226;   <a href="#_distutils_hack">_distutils_hack</a>
  &#8226;   <a href="#fsspec.implementations.reference">fsspec.implementations.reference</a>
  &#8226;   <a href="#huggingface_hub.serialization._torch">huggingface_hub.serialization._torch</a>
  &#8226;   <a href="#huggingface_hub.utils._runtime">huggingface_hub.utils._runtime</a>
@@ -27520,6 +28649,23 @@ imported by:
  &#8226;   <a href="#setuptools._imp">setuptools._imp</a>
  &#8226;   <a href="#sysconfig">sysconfig</a>
  &#8226;   <a href="#zipfile">zipfile</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="importlib_metadata"></a>
+  <a target="code" href="" type="text/plain"><tt>importlib_metadata</tt></a>
+<span class="moduletype">AliasNode</span>  <div class="import">
+imports:
+    <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
 
   </div>
 
@@ -27568,7 +28714,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#PySide6">PySide6</a>
+    <a href="#PyInstaller.lib.modulegraph.util">PyInstaller.lib.modulegraph.util</a>
+ &#8226;   <a href="#PyInstaller.utils.tests">PyInstaller.utils.tests</a>
+ &#8226;   <a href="#PySide6">PySide6</a>
  &#8226;   <a href="#anyio._backends._asyncio">anyio._backends._asyncio</a>
  &#8226;   <a href="#anyio._core._contextmanagers">anyio._core._contextmanagers</a>
  &#8226;   <a href="#anyio._core._tasks">anyio._core._tasks</a>
@@ -27632,6 +28780,7 @@ imported by:
  &#8226;   <a href="#scipy.stats._axis_nan_policy">scipy.stats._axis_nan_policy</a>
  &#8226;   <a href="#scipy.stats._resampling">scipy.stats._resampling</a>
  &#8226;   <a href="#scipy.stats._sensitivity_analysis">scipy.stats._sensitivity_analysis</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.functools">setuptools._vendor.jaraco.functools</a>
  &#8226;   <a href="#setuptools.config._apply_pyprojecttoml">setuptools.config._apply_pyprojecttoml</a>
  &#8226;   <a href="#setuptools.config._validate_pyproject.extra_validations">setuptools.config._validate_pyproject.extra_validations</a>
@@ -27683,6 +28832,7 @@ imported by:
  &#8226;   <a href="#PIL.PsdImagePlugin">PIL.PsdImagePlugin</a>
  &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
  &#8226;   <a href="#PIL.WebPImagePlugin">PIL.WebPImagePlugin</a>
+ &#8226;   <a href="#PyInstaller.utils.misc">PyInstaller.utils.misc</a>
  &#8226;   <a href="#_colorize">_colorize</a>
  &#8226;   <a href="#_compression">_compression</a>
  &#8226;   <a href="#_pyrepl.pager">_pyrepl.pager</a>
@@ -27772,6 +28922,8 @@ imported by:
  &#8226;   <a href="#scipy.io.wavfile">scipy.io.wavfile</a>
  &#8226;   <a href="#setuptools._vendor.wheel.macosx_libfile">setuptools._vendor.wheel.macosx_libfile</a>
  &#8226;   <a href="#setuptools._vendor.wheel.wheelfile">setuptools._vendor.wheel.wheelfile</a>
+ &#8226;   <a href="#setuptools._vendor.zipp">setuptools._vendor.zipp</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.compat.py310">setuptools._vendor.zipp.compat.py310</a>
  &#8226;   <a href="#setuptools.command._requirestxt">setuptools.command._requirestxt</a>
  &#8226;   <a href="#setuptools.config._validate_pyproject.error_reporting">setuptools.config._validate_pyproject.error_reporting</a>
  &#8226;   <a href="#setuptools.dist">setuptools.dist</a>
@@ -27945,11 +29097,14 @@ imported by:
  &#8226;   <a href="#setuptools._distutils.compilers.C.msvc">setuptools._distutils.compilers.C.msvc</a>
  &#8226;   <a href="#setuptools._distutils.dir_util">setuptools._distutils.dir_util</a>
  &#8226;   <a href="#setuptools._entry_points">setuptools._entry_points</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._itertools">setuptools._vendor.importlib_metadata._itertools</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.functools">setuptools._vendor.jaraco.functools</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.text">setuptools._vendor.jaraco.text</a>
  &#8226;   <a href="#setuptools._vendor.more_itertools.more">setuptools._vendor.more_itertools.more</a>
  &#8226;   <a href="#setuptools._vendor.more_itertools.recipes">setuptools._vendor.more_itertools.recipes</a>
  &#8226;   <a href="#setuptools._vendor.packaging.specifiers">setuptools._vendor.packaging.specifiers</a>
+ &#8226;   <a href="#setuptools._vendor.zipp">setuptools._vendor.zipp</a>
  &#8226;   <a href="#setuptools.command._requirestxt">setuptools.command._requirestxt</a>
  &#8226;   <a href="#setuptools.command.sdist">setuptools.command.sdist</a>
  &#8226;   <a href="#setuptools.config._apply_pyprojecttoml">setuptools.config._apply_pyprojecttoml</a>
@@ -28102,7 +29257,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#charset_normalizer.models">charset_normalizer.models</a>
+    <a href="#PyInstaller.utils.hooks.conda">PyInstaller.utils.hooks.conda</a>
+ &#8226;   <a href="#charset_normalizer.models">charset_normalizer.models</a>
  &#8226;   <a href="#ctranslate2.converters.openai_gpt2">ctranslate2.converters.openai_gpt2</a>
  &#8226;   <a href="#ctranslate2.specs.model_spec">ctranslate2.specs.model_spec</a>
  &#8226;   <a href="#faster_whisper.transcribe">faster_whisper.transcribe</a>
@@ -28150,6 +29306,7 @@ imported by:
  &#8226;   <a href="#requests.compat">requests.compat</a>
  &#8226;   <a href="#requests.help">requests.help</a>
  &#8226;   <a href="#scipy.__config__">scipy.__config__</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
  &#8226;   <a href="#setuptools.config._validate_pyproject.error_reporting">setuptools.config._validate_pyproject.error_reporting</a>
  &#8226;   <a href="#setuptools.msvc">setuptools.msvc</a>
  &#8226;   <a href="#tokenizers.implementations.sentencepiece_unigram">tokenizers.implementations.sentencepiece_unigram</a>
@@ -28350,6 +29507,8 @@ imported by:
  &#8226;   <a href="#PIL.PcxImagePlugin">PIL.PcxImagePlugin</a>
  &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
  &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PyInstaller.log">PyInstaller.log</a>
+ &#8226;   <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
  &#8226;   <a href="#anyio.streams.tls">anyio.streams.tls</a>
  &#8226;   <a href="#asyncio.futures">asyncio.futures</a>
  &#8226;   <a href="#asyncio.log">asyncio.log</a>
@@ -28437,6 +29596,8 @@ imported by:
  &#8226;   <a href="#urllib3.response">urllib3.response</a>
  &#8226;   <a href="#urllib3.util.retry">urllib3.util.retry</a>
  &#8226;   <a href="#venv">venv</a>
+ &#8226;   <a href="#win32ctypes.core.cffi">win32ctypes.core.cffi</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes">win32ctypes.core.ctypes</a>
 
   </div>
 
@@ -28489,10 +29650,24 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="macholib"></a>
+  <a target="code" href="" type="text/plain"><tt>macholib</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#PyInstaller.utils.osx">PyInstaller.utils.osx</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="marshal"></a>
   <tt>marshal</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
-    <a href="#importlib._bootstrap_external">importlib._bootstrap_external</a>
+    <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.isolated._parent">PyInstaller.isolated._parent</a>
+ &#8226;   <a href="#PyInstaller.loader.pyimod01_archive">PyInstaller.loader.pyimod01_archive</a>
+ &#8226;   <a href="#importlib._bootstrap_external">importlib._bootstrap_external</a>
  &#8226;   <a href="#pkgutil">pkgutil</a>
  &#8226;   <a href="#setuptools.command.bdist_egg">setuptools.command.bdist_egg</a>
  &#8226;   <a href="#setuptools.depends">setuptools.depends</a>
@@ -28516,6 +29691,7 @@ imported by:
  &#8226;   <a href="#PIL.PdfImagePlugin">PIL.PdfImagePlugin</a>
  &#8226;   <a href="#PIL.PpmImagePlugin">PIL.PpmImagePlugin</a>
  &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
+ &#8226;   <a href="#PyInstaller.utils.osx">PyInstaller.utils.osx</a>
  &#8226;   <a href="#_pydatetime">_pydatetime</a>
  &#8226;   <a href="#_pydecimal">_pydecimal</a>
  &#8226;   <a href="#anyio._backends._asyncio">anyio._backends._asyncio</a>
@@ -28543,6 +29719,7 @@ imported by:
  &#8226;   <a href="#numpy.f2py.symbolic">numpy.f2py.symbolic</a>
  &#8226;   <a href="#numpy.lib">numpy.lib</a>
  &#8226;   <a href="#numpy.lib._index_tricks_impl">numpy.lib._index_tricks_impl</a>
+ &#8226;   <a href="#pefile">pefile</a>
  &#8226;   <a href="#random">random</a>
  &#8226;   <a href="#rapidfuzz._utils">rapidfuzz._utils</a>
  &#8226;   <a href="#rapidfuzz.fuzz_py">rapidfuzz.fuzz_py</a>
@@ -28587,6 +29764,7 @@ imported by:
  &#8226;   <a href="#selectors">selectors</a>
  &#8226;   <a href="#setuptools._vendor.more_itertools.more">setuptools._vendor.more_itertools.more</a>
  &#8226;   <a href="#setuptools._vendor.more_itertools.recipes">setuptools._vendor.more_itertools.recipes</a>
+ &#8226;   <a href="#soundcard.coreaudio">soundcard.coreaudio</a>
  &#8226;   <a href="#statistics">statistics</a>
  &#8226;   <a href="#urllib.parse">urllib.parse</a>
 
@@ -28659,6 +29837,7 @@ imported by:
  &#8226;   <a href="#multiprocessing.heap">multiprocessing.heap</a>
  &#8226;   <a href="#multiprocessing.shared_memory">multiprocessing.shared_memory</a>
  &#8226;   <a href="#numpy._core.memmap">numpy._core.memmap</a>
+ &#8226;   <a href="#pefile">pefile</a>
  &#8226;   <a href="#scipy.io._netcdf">scipy.io._netcdf</a>
 
   </div>
@@ -28693,7 +29872,8 @@ imported by:
   <a name="msvcrt"></a>
   <tt>msvcrt</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
-    <a href="#_pyrepl.windows_console">_pyrepl.windows_console</a>
+    <a href="#PyInstaller.isolated._parent">PyInstaller.isolated._parent</a>
+ &#8226;   <a href="#_pyrepl.windows_console">_pyrepl.windows_console</a>
  &#8226;   <a href="#asyncio.windows_events">asyncio.windows_events</a>
  &#8226;   <a href="#asyncio.windows_utils">asyncio.windows_utils</a>
  &#8226;   <a href="#click._termui_impl">click._termui_impl</a>
@@ -30229,6 +31409,9 @@ imported by:
  &#8226;   <a href="#scipy.stats._variation">scipy.stats._variation</a>
  &#8226;   <a href="#scipy.stats._wilcoxon">scipy.stats._wilcoxon</a>
  &#8226;   <a href="#scipy.stats.contingency">scipy.stats.contingency</a>
+ &#8226;   <a href="#soundcard.coreaudio">soundcard.coreaudio</a>
+ &#8226;   <a href="#soundcard.mediafoundation">soundcard.mediafoundation</a>
+ &#8226;   <a href="#soundcard.pulseaudio">soundcard.pulseaudio</a>
  &#8226;   <a href="#sounddevice">sounddevice</a>
  &#8226;   <a href="#tqdm.contrib">tqdm.contrib</a>
 
@@ -36977,6 +38160,7 @@ imported by:
  &#8226;   <a href="#setuptools._discovery">setuptools._discovery</a>
  &#8226;   <a href="#setuptools._distutils.versionpredicate">setuptools._distutils.versionpredicate</a>
  &#8226;   <a href="#setuptools._entry_points">setuptools._entry_points</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.context">setuptools._vendor.jaraco.context</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.functools">setuptools._vendor.jaraco.functools</a>
  &#8226;   <a href="#setuptools._vendor.more_itertools.more">setuptools._vendor.more_itertools.more</a>
@@ -36986,6 +38170,59 @@ imported by:
  &#8226;   <a href="#tqdm.contrib.concurrent">tqdm.contrib.concurrent</a>
  &#8226;   <a href="#typing">typing</a>
  &#8226;   <a href="#typing_extensions">typing_extensions</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="ordlookup"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/ordlookup/__init__.py" type="text/plain"><tt>ordlookup</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#ordlookup">ordlookup</a>
+ &#8226;   <a href="#ordlookup.oleaut32">ordlookup.oleaut32</a>
+ &#8226;   <a href="#ordlookup.ws2_32">ordlookup.ws2_32</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#ordlookup">ordlookup</a>
+ &#8226;   <a href="#ordlookup.oleaut32">ordlookup.oleaut32</a>
+ &#8226;   <a href="#ordlookup.ws2_32">ordlookup.ws2_32</a>
+ &#8226;   <a href="#pefile">pefile</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="ordlookup.oleaut32"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/ordlookup/oleaut32.py" type="text/plain"><tt>ordlookup.oleaut32</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#ordlookup">ordlookup</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#ordlookup">ordlookup</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="ordlookup.ws2_32"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/ordlookup/ws2_32.py" type="text/plain"><tt>ordlookup.ws2_32</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#ordlookup">ordlookup</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#ordlookup">ordlookup</a>
 
   </div>
 
@@ -37039,6 +38276,22 @@ imported by:
  &#8226;   <a href="#PIL._typing">PIL._typing</a>
  &#8226;   <a href="#PIL._util">PIL._util</a>
  &#8226;   <a href="#PIL.features">PIL.features</a>
+ &#8226;   <a href="#PyInstaller">PyInstaller</a>
+ &#8226;   <a href="#PyInstaller.archive.readers">PyInstaller.archive.readers</a>
+ &#8226;   <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.configure">PyInstaller.configure</a>
+ &#8226;   <a href="#PyInstaller.depend.analysis">PyInstaller.depend.analysis</a>
+ &#8226;   <a href="#PyInstaller.isolated._parent">PyInstaller.isolated._parent</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.find_modules">PyInstaller.lib.modulegraph.find_modules</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
+ &#8226;   <a href="#PyInstaller.loader.pyimod01_archive">PyInstaller.loader.pyimod01_archive</a>
+ &#8226;   <a href="#PyInstaller.log">PyInstaller.log</a>
+ &#8226;   <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#PyInstaller.utils.misc">PyInstaller.utils.misc</a>
+ &#8226;   <a href="#PyInstaller.utils.osx">PyInstaller.utils.osx</a>
+ &#8226;   <a href="#PyInstaller.utils.tests">PyInstaller.utils.tests</a>
  &#8226;   <a href="#PySide6">PySide6</a>
  &#8226;   <a href="#_aix_support">_aix_support</a>
  &#8226;   <a href="#_colorize">_colorize</a>
@@ -37270,6 +38523,7 @@ imported by:
  &#8226;   <a href="#packaging.markers">packaging.markers</a>
  &#8226;   <a href="#pathlib._local">pathlib._local</a>
  &#8226;   <a href="#pdb">pdb</a>
+ &#8226;   <a href="#pefile">pefile</a>
  &#8226;   <a href="#pkgutil">pkgutil</a>
  &#8226;   <a href="#platform">platform</a>
  &#8226;   <a href="#posixpath">posixpath</a>
@@ -37318,11 +38572,15 @@ imported by:
  &#8226;   <a href="#setuptools._imp">setuptools._imp</a>
  &#8226;   <a href="#setuptools._path">setuptools._path</a>
  &#8226;   <a href="#setuptools._shutil">setuptools._shutil</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._meta">setuptools._vendor.importlib_metadata._meta</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat.py311">setuptools._vendor.importlib_metadata.compat.py311</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.context">setuptools._vendor.jaraco.context</a>
  &#8226;   <a href="#setuptools._vendor.packaging._elffile">setuptools._vendor.packaging._elffile</a>
  &#8226;   <a href="#setuptools._vendor.packaging._manylinux">setuptools._vendor.packaging._manylinux</a>
  &#8226;   <a href="#setuptools._vendor.packaging.markers">setuptools._vendor.packaging.markers</a>
  &#8226;   <a href="#setuptools._vendor.wheel.macosx_libfile">setuptools._vendor.wheel.macosx_libfile</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.glob">setuptools._vendor.zipp.glob</a>
  &#8226;   <a href="#setuptools.archive_util">setuptools.archive_util</a>
  &#8226;   <a href="#setuptools.command.bdist_egg">setuptools.command.bdist_egg</a>
  &#8226;   <a href="#setuptools.command.bdist_wheel">setuptools.command.bdist_wheel</a>
@@ -37348,6 +38606,9 @@ imported by:
  &#8226;   <a href="#site">site</a>
  &#8226;   <a href="#socket">socket</a>
  &#8226;   <a href="#socketserver">socketserver</a>
+ &#8226;   <a href="#soundcard.coreaudio">soundcard.coreaudio</a>
+ &#8226;   <a href="#soundcard.mediafoundation">soundcard.mediafoundation</a>
+ &#8226;   <a href="#soundcard.pulseaudio">soundcard.pulseaudio</a>
  &#8226;   <a href="#sounddevice">sounddevice</a>
  &#8226;   <a href="#ssl">ssl</a>
  &#8226;   <a href="#subprocess">subprocess</a>
@@ -37389,7 +38650,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_pyrepl.console">_pyrepl.console</a>
+    <a href="#PyInstaller.depend.imphook">PyInstaller.depend.imphook</a>
+ &#8226;   <a href="#_pyrepl.console">_pyrepl.console</a>
  &#8226;   <a href="#cffi.ffiplatform">cffi.ffiplatform</a>
  &#8226;   <a href="#fsspec.implementations.local">fsspec.implementations.local</a>
  &#8226;   <a href="#huggingface_hub.lfs">huggingface_hub.lfs</a>
@@ -37402,6 +38664,7 @@ imported by:
  &#8226;   <a href="#setuptools._distutils.file_util">setuptools._distutils.file_util</a>
  &#8226;   <a href="#setuptools._vendor.wheel.wheelfile">setuptools._vendor.wheel.wheelfile</a>
  &#8226;   <a href="#setuptools.msvc">setuptools.msvc</a>
+ &#8226;   <a href="#soundcard.__pyinstaller">soundcard.__pyinstaller</a>
  &#8226;   <a href="#sysconfig">sysconfig</a>
  &#8226;   <a href="#tracemalloc">tracemalloc</a>
  &#8226;   <a href="#unittest.util">unittest.util</a>
@@ -37665,7 +38928,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#setuptools._core_metadata">setuptools._core_metadata</a>
+    <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#setuptools._core_metadata">setuptools._core_metadata</a>
  &#8226;   <a href="#setuptools._discovery">setuptools._discovery</a>
  &#8226;   <a href="#setuptools._reqs">setuptools._reqs</a>
  &#8226;   <a href="#setuptools.command._requirestxt">setuptools.command._requirestxt</a>
@@ -37786,7 +39050,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#huggingface_hub.cli.spaces">huggingface_hub.cli.spaces</a>
+    <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#huggingface_hub.cli.spaces">huggingface_hub.cli.spaces</a>
  &#8226;   <a href="#huggingface_hub.fastai_utils">huggingface_hub.fastai_utils</a>
  &#8226;   <a href="#huggingface_hub.hub_mixin">huggingface_hub.hub_mixin</a>
  &#8226;   <a href="#huggingface_hub.serialization._torch">huggingface_hub.serialization._torch</a>
@@ -37849,7 +39114,13 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#PySide6">PySide6</a>
+    <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.isolated._parent">PyInstaller.isolated._parent</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks.conda">PyInstaller.utils.hooks.conda</a>
+ &#8226;   <a href="#PyInstaller.utils.misc">PyInstaller.utils.misc</a>
+ &#8226;   <a href="#PyInstaller.utils.osx">PyInstaller.utils.osx</a>
+ &#8226;   <a href="#PySide6">PySide6</a>
  &#8226;   <a href="#anyio._core._fileio">anyio._core._fileio</a>
  &#8226;   <a href="#app.audio_recorder">app.audio_recorder</a>
  &#8226;   <a href="#app.config">app.config</a>
@@ -37929,6 +39200,9 @@ imported by:
  &#8226;   <a href="#setuptools._distutils.dist">setuptools._distutils.dist</a>
  &#8226;   <a href="#setuptools._distutils.sysconfig">setuptools._distutils.sysconfig</a>
  &#8226;   <a href="#setuptools._distutils.util">setuptools._distutils.util</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat.py311">setuptools._vendor.importlib_metadata.compat.py311</a>
+ &#8226;   <a href="#setuptools._vendor.zipp">setuptools._vendor.zipp</a>
  &#8226;   <a href="#setuptools.config.expand">setuptools.config.expand</a>
  &#8226;   <a href="#setuptools.discovery">setuptools.discovery</a>
  &#8226;   <a href="#setuptools.dist">setuptools.dist</a>
@@ -38036,6 +39310,37 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="pefile"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/pefile.py" type="text/plain"><tt>pefile</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#codecs">codecs</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#copy">copy</a>
+ &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#hashlib">hashlib</a>
+ &#8226;   <a href="#math">math</a>
+ &#8226;   <a href="#mmap">mmap</a>
+ &#8226;   <a href="#ordlookup">ordlookup</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#string">string</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#time">time</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#uuid">uuid</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.utils.win32.versioninfo">PyInstaller.utils.win32.versioninfo</a>
+ &#8226;   <a href="#PyInstaller.utils.win32.winutils">PyInstaller.utils.win32.winutils</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="pickle"></a>
   <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/pickle.py" type="text/plain"><tt>pickle</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -38092,7 +39397,10 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#pydoc">pydoc</a>
+    <a href="#PyInstaller.lib.modulegraph.find_modules">PyInstaller.lib.modulegraph.find_modules</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#pydoc">pydoc</a>
  &#8226;   <a href="#pyi_rth_pkgutil.py">pyi_rth_pkgutil.py</a>
  &#8226;   <a href="#runpy">runpy</a>
  &#8226;   <a href="#unittest.mock">unittest.mock</a>
@@ -38127,7 +39435,11 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_pyrepl.unix_console">_pyrepl.unix_console</a>
+    <a href="#PyInstaller._shared_with_waf">PyInstaller._shared_with_waf</a>
+ &#8226;   <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+ &#8226;   <a href="#_pyrepl.unix_console">_pyrepl.unix_console</a>
  &#8226;   <a href="#huggingface_hub._jobs_api">huggingface_hub._jobs_api</a>
  &#8226;   <a href="#huggingface_hub.utils._runtime">huggingface_hub.utils._runtime</a>
  &#8226;   <a href="#numpy.f2py.crackfortran">numpy.f2py.crackfortran</a>
@@ -38145,12 +39457,14 @@ imported by:
  &#8226;   <a href="#scipy.io._netcdf">scipy.io._netcdf</a>
  &#8226;   <a href="#setuptools._distutils.compat.py39">setuptools._distutils.compat.py39</a>
  &#8226;   <a href="#setuptools._distutils.spawn">setuptools._distutils.spawn</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._compat">setuptools._vendor.importlib_metadata._compat</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.context">setuptools._vendor.jaraco.context</a>
  &#8226;   <a href="#setuptools._vendor.packaging.markers">setuptools._vendor.packaging.markers</a>
  &#8226;   <a href="#setuptools._vendor.packaging.tags">setuptools._vendor.packaging.tags</a>
  &#8226;   <a href="#setuptools.monkey">setuptools.monkey</a>
  &#8226;   <a href="#setuptools.msvc">setuptools.msvc</a>
  &#8226;   <a href="#setuptools.windows_support">setuptools.windows_support</a>
+ &#8226;   <a href="#soundcard.mediafoundation">soundcard.mediafoundation</a>
  &#8226;   <a href="#sounddevice">sounddevice</a>
  &#8226;   <a href="#uuid">uuid</a>
 
@@ -38203,6 +39517,8 @@ imported by:
  &#8226;   <a href="#mimetypes">mimetypes</a>
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#pathlib._local">pathlib._local</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.zipp">setuptools._vendor.zipp</a>
  &#8226;   <a href="#setuptools.archive_util">setuptools.archive_util</a>
  &#8226;   <a href="#setuptools.wheel">setuptools.wheel</a>
  &#8226;   <a href="#zipfile._path">zipfile._path</a>
@@ -38226,7 +39542,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#numpy.f2py.auxfuncs">numpy.f2py.auxfuncs</a>
+    <a href="#PyInstaller.utils.misc">PyInstaller.utils.misc</a>
+ &#8226;   <a href="#numpy.f2py.auxfuncs">numpy.f2py.auxfuncs</a>
  &#8226;   <a href="#numpy.f2py.f2py2e">numpy.f2py.f2py2e</a>
  &#8226;   <a href="#numpy.lib._utils_impl">numpy.lib._utils_impl</a>
  &#8226;   <a href="#numpy.testing._private.utils">numpy.testing._private.utils</a>
@@ -38245,7 +39562,8 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>psutil</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#numpy.testing._private.utils">numpy.testing._private.utils</a>
+    <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+ &#8226;   <a href="#numpy.testing._private.utils">numpy.testing._private.utils</a>
  &#8226;   <a href="#onnxruntime">onnxruntime</a>
  &#8226;   <a href="#onnxruntime.transformers.machine_info">onnxruntime.transformers.machine_info</a>
  &#8226;   <a href="#scipy._lib._testutils">scipy._lib._testutils</a>
@@ -38269,6 +39587,17 @@ imported by:
  &#8226;   <a href="#shutil">shutil</a>
  &#8226;   <a href="#subprocess">subprocess</a>
  &#8226;   <a href="#tarfile">tarfile</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="py"></a>
+  <a target="code" href="" type="text/plain"><tt>py</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
 
   </div>
 
@@ -38303,7 +39632,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#setuptools._distutils.util">setuptools._distutils.util</a>
+    <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#setuptools._distutils.util">setuptools._distutils.util</a>
  &#8226;   <a href="#zipfile">zipfile</a>
 
   </div>
@@ -38574,7 +39904,9 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>pytest</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#fsspec.conftest">fsspec.conftest</a>
+    <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+ &#8226;   <a href="#PyInstaller.utils.tests">PyInstaller.utils.tests</a>
+ &#8226;   <a href="#fsspec.conftest">fsspec.conftest</a>
  &#8226;   <a href="#scipy._lib._testutils">scipy._lib._testutils</a>
 
   </div>
@@ -38661,6 +39993,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#PIL.ImagePalette">PIL.ImagePalette</a>
+ &#8226;   <a href="#altgraph.GraphUtil">altgraph.GraphUtil</a>
  &#8226;   <a href="#click._compat">click._compat</a>
  &#8226;   <a href="#email.generator">email.generator</a>
  &#8226;   <a href="#email.utils">email.utils</a>
@@ -39670,6 +41003,13 @@ imported by:
  &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
  &#8226;   <a href="#PIL.XbmImagePlugin">PIL.XbmImagePlugin</a>
  &#8226;   <a href="#PIL.XpmImagePlugin">PIL.XpmImagePlugin</a>
+ &#8226;   <a href="#PyInstaller._shared_with_waf">PyInstaller._shared_with_waf</a>
+ &#8226;   <a href="#PyInstaller.depend.analysis">PyInstaller.depend.analysis</a>
+ &#8226;   <a href="#PyInstaller.depend.bytecode">PyInstaller.depend.bytecode</a>
+ &#8226;   <a href="#PyInstaller.depend.imphook">PyInstaller.depend.imphook</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
+ &#8226;   <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+ &#8226;   <a href="#PyInstaller.utils.misc">PyInstaller.utils.misc</a>
  &#8226;   <a href="#_pydecimal">_pydecimal</a>
  &#8226;   <a href="#_pyrepl.completing_reader">_pyrepl.completing_reader</a>
  &#8226;   <a href="#_pyrepl.pager">_pyrepl.pager</a>
@@ -39678,6 +41018,7 @@ imported by:
  &#8226;   <a href="#_sre">_sre</a>
  &#8226;   <a href="#_strptime">_strptime</a>
  &#8226;   <a href="#anyio.streams.tls">anyio.streams.tls</a>
+ &#8226;   <a href="#app.speech_to_text">app.speech_to_text</a>
  &#8226;   <a href="#argparse">argparse</a>
  &#8226;   <a href="#ast">ast</a>
  &#8226;   <a href="#base64">base64</a>
@@ -39840,6 +41181,9 @@ imported by:
  &#8226;   <a href="#setuptools._distutils.version">setuptools._distutils.version</a>
  &#8226;   <a href="#setuptools._distutils.versionpredicate">setuptools._distutils.versionpredicate</a>
  &#8226;   <a href="#setuptools._normalization">setuptools._normalization</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._adapters">setuptools._vendor.importlib_metadata._adapters</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._text">setuptools._vendor.importlib_metadata._text</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.text">setuptools._vendor.jaraco.text</a>
  &#8226;   <a href="#setuptools._vendor.packaging._manylinux">setuptools._vendor.packaging._manylinux</a>
  &#8226;   <a href="#setuptools._vendor.packaging._musllinux">setuptools._vendor.packaging._musllinux</a>
@@ -39850,6 +41194,8 @@ imported by:
  &#8226;   <a href="#setuptools._vendor.packaging.version">setuptools._vendor.packaging.version</a>
  &#8226;   <a href="#setuptools._vendor.tomli._re">setuptools._vendor.tomli._re</a>
  &#8226;   <a href="#setuptools._vendor.wheel.wheelfile">setuptools._vendor.wheel.wheelfile</a>
+ &#8226;   <a href="#setuptools._vendor.zipp">setuptools._vendor.zipp</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.glob">setuptools._vendor.zipp.glob</a>
  &#8226;   <a href="#setuptools.command.bdist_egg">setuptools.command.bdist_egg</a>
  &#8226;   <a href="#setuptools.command.bdist_wheel">setuptools.command.bdist_wheel</a>
  &#8226;   <a href="#setuptools.command.egg_info">setuptools.command.egg_info</a>
@@ -39864,6 +41210,9 @@ imported by:
  &#8226;   <a href="#setuptools.wheel">setuptools.wheel</a>
  &#8226;   <a href="#shiboken6">shiboken6</a>
  &#8226;   <a href="#shlex">shlex</a>
+ &#8226;   <a href="#soundcard.coreaudio">soundcard.coreaudio</a>
+ &#8226;   <a href="#soundcard.mediafoundation">soundcard.mediafoundation</a>
+ &#8226;   <a href="#soundcard.pulseaudio">soundcard.pulseaudio</a>
  &#8226;   <a href="#sre_compile">sre_compile</a>
  &#8226;   <a href="#sre_constants">sre_constants</a>
  &#8226;   <a href="#sre_parse">sre_parse</a>
@@ -53227,7 +54576,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#cffi._shimmed_dist_utils">cffi._shimmed_dist_utils</a>
+    <a href="#PyInstaller.utils.tests">PyInstaller.utils.tests</a>
+ &#8226;   <a href="#cffi._shimmed_dist_utils">cffi._shimmed_dist_utils</a>
  &#8226;   <a href="#setuptools._distutils.command.build">setuptools._distutils.command.build</a>
  &#8226;   <a href="#setuptools._distutils.command.build_ext">setuptools._distutils.command.build_ext</a>
  &#8226;   <a href="#setuptools._distutils.sysconfig">setuptools._distutils.sysconfig</a>
@@ -54372,11 +55722,290 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#setuptools._vendor.jaraco">setuptools._vendor.jaraco</a>
+    <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.jaraco">setuptools._vendor.jaraco</a>
  &#8226;   <a href="#setuptools._vendor.more_itertools">setuptools._vendor.more_itertools</a>
  &#8226;   <a href="#setuptools._vendor.packaging">setuptools._vendor.packaging</a>
  &#8226;   <a href="#setuptools._vendor.tomli">setuptools._vendor.tomli</a>
  &#8226;   <a href="#setuptools._vendor.wheel">setuptools._vendor.wheel</a>
+ &#8226;   <a href="#setuptools._vendor.zipp">setuptools._vendor.zipp</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="setuptools._vendor.importlib_metadata"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/setuptools/_vendor/importlib_metadata/__init__.py" type="text/plain"><tt>setuptools._vendor.importlib_metadata</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#'collections.abc'">'collections.abc'</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#abc">abc</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#contextlib">contextlib</a>
+ &#8226;   <a href="#csv">csv</a>
+ &#8226;   <a href="#email">email</a>
+ &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#importlib">importlib</a>
+ &#8226;   <a href="#importlib.abc">importlib.abc</a>
+ &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#json">json</a>
+ &#8226;   <a href="#operator">operator</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#posixpath">posixpath</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#setuptools._vendor">setuptools._vendor</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._adapters">setuptools._vendor.importlib_metadata._adapters</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._collections">setuptools._vendor.importlib_metadata._collections</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._compat">setuptools._vendor.importlib_metadata._compat</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._functools">setuptools._vendor.importlib_metadata._functools</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._itertools">setuptools._vendor.importlib_metadata._itertools</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._meta">setuptools._vendor.importlib_metadata._meta</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._typing">setuptools._vendor.importlib_metadata._typing</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat">setuptools._vendor.importlib_metadata.compat</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat.py311">setuptools._vendor.importlib_metadata.compat.py311</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat.py39">setuptools._vendor.importlib_metadata.compat.py39</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.compat.overlay">setuptools._vendor.zipp.compat.overlay</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#textwrap">textwrap</a>
+ &#8226;   <a href="#types">types</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#importlib_metadata">importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._adapters">setuptools._vendor.importlib_metadata._adapters</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._collections">setuptools._vendor.importlib_metadata._collections</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._compat">setuptools._vendor.importlib_metadata._compat</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._functools">setuptools._vendor.importlib_metadata._functools</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._itertools">setuptools._vendor.importlib_metadata._itertools</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._meta">setuptools._vendor.importlib_metadata._meta</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._text">setuptools._vendor.importlib_metadata._text</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._typing">setuptools._vendor.importlib_metadata._typing</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat">setuptools._vendor.importlib_metadata.compat</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat.py39">setuptools._vendor.importlib_metadata.compat.py39</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="setuptools._vendor.importlib_metadata._adapters"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/setuptools/_vendor/importlib_metadata/_adapters.py" type="text/plain"><tt>setuptools._vendor.importlib_metadata._adapters</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#email.message">email.message</a>
+ &#8226;   <a href="#email.policy">email.policy</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._text">setuptools._vendor.importlib_metadata._text</a>
+ &#8226;   <a href="#textwrap">textwrap</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="setuptools._vendor.importlib_metadata._collections"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/setuptools/_vendor/importlib_metadata/_collections.py" type="text/plain"><tt>setuptools._vendor.importlib_metadata._collections</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#collections">collections</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="setuptools._vendor.importlib_metadata._compat"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/setuptools/_vendor/importlib_metadata/_compat.py" type="text/plain"><tt>setuptools._vendor.importlib_metadata._compat</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#platform">platform</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#sys">sys</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="setuptools._vendor.importlib_metadata._functools"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/setuptools/_vendor/importlib_metadata/_functools.py" type="text/plain"><tt>setuptools._vendor.importlib_metadata._functools</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#functools">functools</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#types">types</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._text">setuptools._vendor.importlib_metadata._text</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="setuptools._vendor.importlib_metadata._itertools"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/setuptools/_vendor/importlib_metadata/_itertools.py" type="text/plain"><tt>setuptools._vendor.importlib_metadata._itertools</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#collections">collections</a>
+ &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="setuptools._vendor.importlib_metadata._meta"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/setuptools/_vendor/importlib_metadata/_meta.py" type="text/plain"><tt>setuptools._vendor.importlib_metadata._meta</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#'collections.abc'">'collections.abc'</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._typing">setuptools._vendor.importlib_metadata._typing</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="setuptools._vendor.importlib_metadata._text"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/setuptools/_vendor/importlib_metadata/_text.py" type="text/plain"><tt>setuptools._vendor.importlib_metadata._text</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#re">re</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._functools">setuptools._vendor.importlib_metadata._functools</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#setuptools._vendor.importlib_metadata._adapters">setuptools._vendor.importlib_metadata._adapters</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="setuptools._vendor.importlib_metadata._typing"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/setuptools/_vendor/importlib_metadata/_typing.py" type="text/plain"><tt>setuptools._vendor.importlib_metadata._typing</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#functools">functools</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._meta">setuptools._vendor.importlib_metadata._meta</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat.py39">setuptools._vendor.importlib_metadata.compat.py39</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="setuptools._vendor.importlib_metadata.compat"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/setuptools/_vendor/importlib_metadata/compat/__init__.py" type="text/plain"><tt>setuptools._vendor.importlib_metadata.compat</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat.py311">setuptools._vendor.importlib_metadata.compat.py311</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat.py39">setuptools._vendor.importlib_metadata.compat.py39</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat.py311">setuptools._vendor.importlib_metadata.compat.py311</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat.py39">setuptools._vendor.importlib_metadata.compat.py39</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="setuptools._vendor.importlib_metadata.compat.py311"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/setuptools/_vendor/importlib_metadata/compat/py311.py" type="text/plain"><tt>setuptools._vendor.importlib_metadata.compat.py311</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#os">os</a>
+ &#8226;   <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat">setuptools._vendor.importlib_metadata.compat</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#types">types</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat">setuptools._vendor.importlib_metadata.compat</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="setuptools._vendor.importlib_metadata.compat.py39"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/setuptools/_vendor/importlib_metadata/compat/py39.py" type="text/plain"><tt>setuptools._vendor.importlib_metadata.compat.py39</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#__future__">__future__</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._typing">setuptools._vendor.importlib_metadata._typing</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat">setuptools._vendor.importlib_metadata.compat</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat">setuptools._vendor.importlib_metadata.compat</a>
 
   </div>
 
@@ -55030,6 +56659,149 @@ imports:
   <div class="import">
 imported by:
     <a href="#setuptools.command.bdist_wheel">setuptools.command.bdist_wheel</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="setuptools._vendor.zipp"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/setuptools/_vendor/zipp/__init__.py" type="text/plain"><tt>setuptools._vendor.zipp</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#functools">functools</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#posixpath">posixpath</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#setuptools._vendor">setuptools._vendor</a>
+ &#8226;   <a href="#setuptools._vendor.zipp._functools">setuptools._vendor.zipp._functools</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.compat.py310">setuptools._vendor.zipp.compat.py310</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.glob">setuptools._vendor.zipp.glob</a>
+ &#8226;   <a href="#stat">stat</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#zipfile">zipfile</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#setuptools._vendor.zipp._functools">setuptools._vendor.zipp._functools</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.compat">setuptools._vendor.zipp.compat</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.glob">setuptools._vendor.zipp.glob</a>
+ &#8226;   <a href="#zipp">zipp</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="setuptools._vendor.zipp._functools"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/setuptools/_vendor/zipp/_functools.py" type="text/plain"><tt>setuptools._vendor.zipp._functools</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#collections">collections</a>
+ &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#setuptools._vendor.zipp">setuptools._vendor.zipp</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#setuptools._vendor.zipp">setuptools._vendor.zipp</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="setuptools._vendor.zipp.compat"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/setuptools/_vendor/zipp/compat/__init__.py" type="text/plain"><tt>setuptools._vendor.zipp.compat</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#setuptools._vendor.zipp">setuptools._vendor.zipp</a>
+ &#8226;   <a href="#zipp">zipp</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#setuptools._vendor.zipp.compat.overlay">setuptools._vendor.zipp.compat.overlay</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.compat.py310">setuptools._vendor.zipp.compat.py310</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.compat.py313">setuptools._vendor.zipp.compat.py313</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="setuptools._vendor.zipp.compat.overlay"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/setuptools/_vendor/zipp/compat/overlay.py" type="text/plain"><tt>setuptools._vendor.zipp.compat.overlay</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#importlib">importlib</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.compat">setuptools._vendor.zipp.compat</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#types">types</a>
+ &#8226;   <a href="#zipp">zipp</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="setuptools._vendor.zipp.compat.py310"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/setuptools/_vendor/zipp/compat/py310.py" type="text/plain"><tt>setuptools._vendor.zipp.compat.py310</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#io">io</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.compat">setuptools._vendor.zipp.compat</a>
+ &#8226;   <a href="#sys">sys</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#setuptools._vendor.zipp">setuptools._vendor.zipp</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="setuptools._vendor.zipp.compat.py313"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/setuptools/_vendor/zipp/compat/py313.py" type="text/plain"><tt>setuptools._vendor.zipp.compat.py313</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#functools">functools</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.compat">setuptools._vendor.zipp.compat</a>
+ &#8226;   <a href="#sys">sys</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#setuptools._vendor.zipp.glob">setuptools._vendor.zipp.glob</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="setuptools._vendor.zipp.glob"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/setuptools/_vendor/zipp/glob.py" type="text/plain"><tt>setuptools._vendor.zipp.glob</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#os">os</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#setuptools._vendor.zipp">setuptools._vendor.zipp</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.compat.py313">setuptools._vendor.zipp.compat.py313</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#setuptools._vendor.zipp">setuptools._vendor.zipp</a>
 
   </div>
 
@@ -56278,6 +58050,11 @@ imports:
 imported by:
     <a href="#PIL.EpsImagePlugin">PIL.EpsImagePlugin</a>
  &#8226;   <a href="#PIL.ImageShow">PIL.ImageShow</a>
+ &#8226;   <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+ &#8226;   <a href="#PyInstaller.utils.osx">PyInstaller.utils.osx</a>
+ &#8226;   <a href="#PyInstaller.utils.tests">PyInstaller.utils.tests</a>
  &#8226;   <a href="#argparse">argparse</a>
  &#8226;   <a href="#cffi.verifier">cffi.verifier</a>
  &#8226;   <a href="#click._termui_impl">click._termui_impl</a>
@@ -56409,7 +58186,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_pyrepl.commands">_pyrepl.commands</a>
+    <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#_pyrepl.commands">_pyrepl.commands</a>
  &#8226;   <a href="#_pyrepl.readline">_pyrepl.readline</a>
  &#8226;   <a href="#setuptools._distutils.command.build_ext">setuptools._distutils.command.build_ext</a>
 
@@ -56595,6 +58373,200 @@ imported by:
     <a href="#httpcore._async.socks_proxy">httpcore._async.socks_proxy</a>
  &#8226;   <a href="#httpcore._sync.socks_proxy">httpcore._sync.socks_proxy</a>
  &#8226;   <a href="#httpx._transports.default">httpx._transports.default</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="soundcard"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/soundcard/__init__.py" type="text/plain"><tt>soundcard</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#soundcard.coreaudio">soundcard.coreaudio</a>
+ &#8226;   <a href="#soundcard.coreaudioconstants">soundcard.coreaudioconstants</a>
+ &#8226;   <a href="#soundcard.mediafoundation">soundcard.mediafoundation</a>
+ &#8226;   <a href="#soundcard.pulseaudio">soundcard.pulseaudio</a>
+ &#8226;   <a href="#sys">sys</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#app.audio_recorder">app.audio_recorder</a>
+ &#8226;   <a href="#main.py">main.py</a>
+ &#8226;   <a href="#soundcard.__pyinstaller">soundcard.__pyinstaller</a>
+ &#8226;   <a href="#soundcard.coreaudio">soundcard.coreaudio</a>
+ &#8226;   <a href="#soundcard.coreaudioconstants">soundcard.coreaudioconstants</a>
+ &#8226;   <a href="#soundcard.mediafoundation">soundcard.mediafoundation</a>
+ &#8226;   <a href="#soundcard.pulseaudio">soundcard.pulseaudio</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="soundcard.__pyinstaller"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/soundcard/__pyinstaller/__init__.py" type="text/plain"><tt>soundcard.__pyinstaller</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#os.path">os.path</a>
+ &#8226;   <a href="#soundcard">soundcard</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#main.py">main.py</a>
+ &#8226;   <a href="#soundcard.__pyinstaller.conftest">soundcard.__pyinstaller.conftest</a>
+ &#8226;   <a href="#soundcard.__pyinstaller.hook-soundcard">soundcard.__pyinstaller.hook-soundcard</a>
+ &#8226;   <a href="#soundcard.__pyinstaller.test_soundcard">soundcard.__pyinstaller.test_soundcard</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="soundcard.__pyinstaller.conftest"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/soundcard/__pyinstaller/conftest.py" type="text/plain"><tt>soundcard.__pyinstaller.conftest</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+ &#8226;   <a href="#soundcard.__pyinstaller">soundcard.__pyinstaller</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#main.py">main.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="soundcard.__pyinstaller.hook-soundcard"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/soundcard/__pyinstaller/hook-soundcard.py" type="text/plain"><tt>soundcard.__pyinstaller.hook-soundcard</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#soundcard.__pyinstaller">soundcard.__pyinstaller</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#main.py">main.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="soundcard.__pyinstaller.test_soundcard"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/soundcard/__pyinstaller/test_soundcard.py" type="text/plain"><tt>soundcard.__pyinstaller.test_soundcard</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#soundcard.__pyinstaller">soundcard.__pyinstaller</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#main.py">main.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="soundcard.coreaudio"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/soundcard/coreaudio.py" type="text/plain"><tt>soundcard.coreaudio</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#cffi">cffi</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#math">math</a>
+ &#8226;   <a href="#numpy">numpy</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#soundcard">soundcard</a>
+ &#8226;   <a href="#soundcard.coreaudioconstants">soundcard.coreaudioconstants</a>
+ &#8226;   <a href="#threading">threading</a>
+ &#8226;   <a href="#time">time</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#main.py">main.py</a>
+ &#8226;   <a href="#soundcard">soundcard</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="soundcard.coreaudioconstants"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/soundcard/coreaudioconstants.py" type="text/plain"><tt>soundcard.coreaudioconstants</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#soundcard">soundcard</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#main.py">main.py</a>
+ &#8226;   <a href="#soundcard">soundcard</a>
+ &#8226;   <a href="#soundcard.coreaudio">soundcard.coreaudio</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="soundcard.mediafoundation"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/soundcard/mediafoundation.py" type="text/plain"><tt>soundcard.mediafoundation</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#cffi">cffi</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#numpy">numpy</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#platform">platform</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#soundcard">soundcard</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#time">time</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#main.py">main.py</a>
+ &#8226;   <a href="#soundcard">soundcard</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="soundcard.pulseaudio"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/soundcard/pulseaudio.py" type="text/plain"><tt>soundcard.pulseaudio</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#'collections.abc'">'collections.abc'</a>
+ &#8226;   <a href="#atexit">atexit</a>
+ &#8226;   <a href="#cffi">cffi</a>
+ &#8226;   <a href="#numpy">numpy</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#soundcard">soundcard</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#threading">threading</a>
+ &#8226;   <a href="#time">time</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#main.py">main.py</a>
+ &#8226;   <a href="#soundcard">soundcard</a>
 
   </div>
 
@@ -56898,6 +58870,7 @@ imported by:
  &#8226;   <a href="#setuptools._shutil">setuptools._shutil</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.context">setuptools._vendor.jaraco.context</a>
  &#8226;   <a href="#setuptools._vendor.wheel.wheelfile">setuptools._vendor.wheel.wheelfile</a>
+ &#8226;   <a href="#setuptools._vendor.zipp">setuptools._vendor.zipp</a>
  &#8226;   <a href="#shutil">shutil</a>
  &#8226;   <a href="#site">site</a>
  &#8226;   <a href="#tarfile">tarfile</a>
@@ -56958,6 +58931,7 @@ imported by:
  &#8226;   <a href="#nturl2path">nturl2path</a>
  &#8226;   <a href="#numpy.f2py._backends._meson">numpy.f2py._backends._meson</a>
  &#8226;   <a href="#numpy.f2py.crackfortran">numpy.f2py.crackfortran</a>
+ &#8226;   <a href="#pefile">pefile</a>
  &#8226;   <a href="#setuptools._distutils.fancy_getopt">setuptools._distutils.fancy_getopt</a>
  &#8226;   <a href="#setuptools._distutils.util">setuptools._distutils.util</a>
  &#8226;   <a href="#setuptools.config._validate_pyproject.formats">setuptools.config._validate_pyproject.formats</a>
@@ -57010,6 +58984,10 @@ imported by:
  &#8226;   <a href="#PIL.SpiderImagePlugin">PIL.SpiderImagePlugin</a>
  &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
  &#8226;   <a href="#PIL._binary">PIL._binary</a>
+ &#8226;   <a href="#PyInstaller.archive.readers">PyInstaller.archive.readers</a>
+ &#8226;   <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.loader.pyimod01_archive">PyInstaller.loader.pyimod01_archive</a>
+ &#8226;   <a href="#PyInstaller.utils.win32.versioninfo">PyInstaller.utils.win32.versioninfo</a>
  &#8226;   <a href="#_pyrepl.unix_console">_pyrepl.unix_console</a>
  &#8226;   <a href="#asyncio.windows_events">asyncio.windows_events</a>
  &#8226;   <a href="#base64">base64</a>
@@ -57026,6 +59004,7 @@ imported by:
  &#8226;   <a href="#numpy.lib.format">numpy.lib.format</a>
  &#8226;   <a href="#packaging._elffile">packaging._elffile</a>
  &#8226;   <a href="#packaging.tags">packaging.tags</a>
+ &#8226;   <a href="#pefile">pefile</a>
  &#8226;   <a href="#pickle">pickle</a>
  &#8226;   <a href="#platform">platform</a>
  &#8226;   <a href="#requests.utils">requests.utils</a>
@@ -57035,6 +59014,7 @@ imported by:
  &#8226;   <a href="#setuptools._vendor.packaging.tags">setuptools._vendor.packaging.tags</a>
  &#8226;   <a href="#setuptools.command.bdist_wheel">setuptools.command.bdist_wheel</a>
  &#8226;   <a href="#shiboken6">shiboken6</a>
+ &#8226;   <a href="#soundcard.mediafoundation">soundcard.mediafoundation</a>
  &#8226;   <a href="#tarfile">tarfile</a>
  &#8226;   <a href="#zipfile">zipfile</a>
  &#8226;   <a href="#zipimport">zipimport</a>
@@ -57076,6 +59056,14 @@ imported by:
  &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
  &#8226;   <a href="#PIL.ImageShow">PIL.ImageShow</a>
  &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.configure">PyInstaller.configure</a>
+ &#8226;   <a href="#PyInstaller.isolated._parent">PyInstaller.isolated._parent</a>
+ &#8226;   <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#PyInstaller.utils.osx">PyInstaller.utils.osx</a>
+ &#8226;   <a href="#PyInstaller.utils.tests">PyInstaller.utils.tests</a>
  &#8226;   <a href="#_aix_support">_aix_support</a>
  &#8226;   <a href="#_pyrepl.pager">_pyrepl.pager</a>
  &#8226;   <a href="#anyio._core._subprocesses">anyio._core._subprocesses</a>
@@ -57146,6 +59134,16 @@ imported by:
  &#8226;   <a href="#PIL.SpiderImagePlugin">PIL.SpiderImagePlugin</a>
  &#8226;   <a href="#PIL._typing">PIL._typing</a>
  &#8226;   <a href="#PIL.features">PIL.features</a>
+ &#8226;   <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.depend.analysis">PyInstaller.depend.analysis</a>
+ &#8226;   <a href="#PyInstaller.depend.imphook">PyInstaller.depend.imphook</a>
+ &#8226;   <a href="#PyInstaller.isolated._parent">PyInstaller.isolated._parent</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
+ &#8226;   <a href="#PyInstaller.utils.conftest">PyInstaller.utils.conftest</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks.conda">PyInstaller.utils.hooks.conda</a>
+ &#8226;   <a href="#PyInstaller.utils.tests">PyInstaller.utils.tests</a>
  &#8226;   <a href="#PySide6">PySide6</a>
  &#8226;   <a href="#_aix_support">_aix_support</a>
  &#8226;   <a href="#_collections_abc">_collections_abc</a>
@@ -57358,6 +59356,7 @@ imported by:
  &#8226;   <a href="#packaging.version">packaging.version</a>
  &#8226;   <a href="#pathlib._local">pathlib._local</a>
  &#8226;   <a href="#pdb">pdb</a>
+ &#8226;   <a href="#pefile">pefile</a>
  &#8226;   <a href="#pickle">pickle</a>
  &#8226;   <a href="#pkgutil">pkgutil</a>
  &#8226;   <a href="#platform">platform</a>
@@ -57417,6 +59416,9 @@ imported by:
  &#8226;   <a href="#setuptools._distutils.text_file">setuptools._distutils.text_file</a>
  &#8226;   <a href="#setuptools._distutils.util">setuptools._distutils.util</a>
  &#8226;   <a href="#setuptools._path">setuptools._path</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._compat">setuptools._vendor.importlib_metadata._compat</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat.py311">setuptools._vendor.importlib_metadata.compat.py311</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.context">setuptools._vendor.jaraco.context</a>
  &#8226;   <a href="#setuptools._vendor.more_itertools.more">setuptools._vendor.more_itertools.more</a>
  &#8226;   <a href="#setuptools._vendor.more_itertools.recipes">setuptools._vendor.more_itertools.recipes</a>
@@ -57427,6 +59429,10 @@ imported by:
  &#8226;   <a href="#setuptools._vendor.packaging.version">setuptools._vendor.packaging.version</a>
  &#8226;   <a href="#setuptools._vendor.tomli._parser">setuptools._vendor.tomli._parser</a>
  &#8226;   <a href="#setuptools._vendor.wheel.macosx_libfile">setuptools._vendor.wheel.macosx_libfile</a>
+ &#8226;   <a href="#setuptools._vendor.zipp">setuptools._vendor.zipp</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.compat.overlay">setuptools._vendor.zipp.compat.overlay</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.compat.py310">setuptools._vendor.zipp.compat.py310</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.compat.py313">setuptools._vendor.zipp.compat.py313</a>
  &#8226;   <a href="#setuptools.command">setuptools.command</a>
  &#8226;   <a href="#setuptools.command.bdist_egg">setuptools.command.bdist_egg</a>
  &#8226;   <a href="#setuptools.command.bdist_wheel">setuptools.command.bdist_wheel</a>
@@ -57448,6 +59454,8 @@ imported by:
  &#8226;   <a href="#site">site</a>
  &#8226;   <a href="#socket">socket</a>
  &#8226;   <a href="#socketserver">socketserver</a>
+ &#8226;   <a href="#soundcard">soundcard</a>
+ &#8226;   <a href="#soundcard.pulseaudio">soundcard.pulseaudio</a>
  &#8226;   <a href="#sounddevice">sounddevice</a>
  &#8226;   <a href="#sqlite3.__main__">sqlite3.__main__</a>
  &#8226;   <a href="#ssl">ssl</a>
@@ -57489,6 +59497,8 @@ imported by:
  &#8226;   <a href="#warnings">warnings</a>
  &#8226;   <a href="#weakref">weakref</a>
  &#8226;   <a href="#webbrowser">webbrowser</a>
+ &#8226;   <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._common">win32ctypes.core.ctypes._common</a>
  &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
  &#8226;   <a href="#xml.parsers.expat">xml.parsers.expat</a>
  &#8226;   <a href="#xml.sax">xml.sax</a>
@@ -57523,7 +59533,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_aix_support">_aix_support</a>
+    <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#_aix_support">_aix_support</a>
  &#8226;   <a href="#cffi.api">cffi.api</a>
  &#8226;   <a href="#cffi.recompiler">cffi.recompiler</a>
  &#8226;   <a href="#numpy.ctypeslib">numpy.ctypeslib</a>
@@ -57606,6 +59617,8 @@ imported by:
     <a href="#PIL.EpsImagePlugin">PIL.EpsImagePlugin</a>
  &#8226;   <a href="#PIL.Image">PIL.Image</a>
  &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
+ &#8226;   <a href="#PyInstaller.utils.osx">PyInstaller.utils.osx</a>
+ &#8226;   <a href="#PyInstaller.utils.tests">PyInstaller.utils.tests</a>
  &#8226;   <a href="#_pyrepl.pager">_pyrepl.pager</a>
  &#8226;   <a href="#anyio._core._tempfile">anyio._core._tempfile</a>
  &#8226;   <a href="#asyncio.windows_utils">asyncio.windows_utils</a>
@@ -57698,7 +59711,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#anyio._core._exceptions">anyio._core._exceptions</a>
+    <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#PyInstaller.utils.tests">PyInstaller.utils.tests</a>
+ &#8226;   <a href="#anyio._core._exceptions">anyio._core._exceptions</a>
  &#8226;   <a href="#argparse">argparse</a>
  &#8226;   <a href="#click._textwrap">click._textwrap</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
@@ -57712,6 +59727,8 @@ imported by:
  &#8226;   <a href="#scipy._lib._docscrape">scipy._lib._docscrape</a>
  &#8226;   <a href="#scipy.optimize._optimize">scipy.optimize._optimize</a>
  &#8226;   <a href="#setuptools._core_metadata">setuptools._core_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._adapters">setuptools._vendor.importlib_metadata._adapters</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.text">setuptools._vendor.jaraco.text</a>
  &#8226;   <a href="#setuptools.command.bdist_egg">setuptools.command.bdist_egg</a>
  &#8226;   <a href="#setuptools.config._validate_pyproject.error_reporting">setuptools.config._validate_pyproject.error_reporting</a>
@@ -57764,6 +59781,7 @@ imported by:
  &#8226;   <a href="#anyio._core._asyncio_selector_thread">anyio._core._asyncio_selector_thread</a>
  &#8226;   <a href="#anyio._core._eventloop">anyio._core._eventloop</a>
  &#8226;   <a href="#anyio.from_thread">anyio.from_thread</a>
+ &#8226;   <a href="#app.speech_to_text">app.speech_to_text</a>
  &#8226;   <a href="#asyncio.base_events">asyncio.base_events</a>
  &#8226;   <a href="#asyncio.events">asyncio.events</a>
  &#8226;   <a href="#asyncio.mixins">asyncio.mixins</a>
@@ -57818,6 +59836,8 @@ imported by:
  &#8226;   <a href="#scipy.fft._pocketfft.helper">scipy.fft._pocketfft.helper</a>
  &#8226;   <a href="#scipy.optimize._cobyla_py">scipy.optimize._cobyla_py</a>
  &#8226;   <a href="#socketserver">socketserver</a>
+ &#8226;   <a href="#soundcard.coreaudio">soundcard.coreaudio</a>
+ &#8226;   <a href="#soundcard.pulseaudio">soundcard.pulseaudio</a>
  &#8226;   <a href="#sounddevice">sounddevice</a>
  &#8226;   <a href="#subprocess">subprocess</a>
  &#8226;   <a href="#sysconfig">sysconfig</a>
@@ -57933,6 +59953,7 @@ imported by:
  &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
  &#8226;   <a href="#numpy.f2py.rules">numpy.f2py.rules</a>
  &#8226;   <a href="#numpy.testing._private.utils">numpy.testing._private.utils</a>
+ &#8226;   <a href="#pefile">pefile</a>
  &#8226;   <a href="#pydoc">pydoc</a>
  &#8226;   <a href="#queue">queue</a>
  &#8226;   <a href="#random">random</a>
@@ -57947,6 +59968,9 @@ imported by:
  &#8226;   <a href="#setuptools._vendor.wheel.wheelfile">setuptools._vendor.wheel.wheelfile</a>
  &#8226;   <a href="#setuptools.command.egg_info">setuptools.command.egg_info</a>
  &#8226;   <a href="#socketserver">socketserver</a>
+ &#8226;   <a href="#soundcard.coreaudio">soundcard.coreaudio</a>
+ &#8226;   <a href="#soundcard.mediafoundation">soundcard.mediafoundation</a>
+ &#8226;   <a href="#soundcard.pulseaudio">soundcard.pulseaudio</a>
  &#8226;   <a href="#sqlite3.dbapi2">sqlite3.dbapi2</a>
  &#8226;   <a href="#ssl">ssl</a>
  &#8226;   <a href="#subprocess">subprocess</a>
@@ -57960,6 +59984,7 @@ imported by:
  &#8226;   <a href="#urllib3.util.retry">urllib3.util.retry</a>
  &#8226;   <a href="#urllib3.util.timeout">urllib3.util.timeout</a>
  &#8226;   <a href="#uuid">uuid</a>
+ &#8226;   <a href="#win32ctypes.pywin32.pywintypes">win32ctypes.pywin32.pywintypes</a>
  &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
  &#8226;   <a href="#zipfile">zipfile</a>
  &#8226;   <a href="#zipimport">zipimport</a>
@@ -58001,7 +60026,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_pyrepl.main">_pyrepl.main</a>
+    <a href="#PyInstaller.utils.misc">PyInstaller.utils.misc</a>
+ &#8226;   <a href="#_pyrepl.main">_pyrepl.main</a>
  &#8226;   <a href="#cffi._imp_emulation">cffi._imp_emulation</a>
  &#8226;   <a href="#importlib._bootstrap_external">importlib._bootstrap_external</a>
  &#8226;   <a href="#inspect">inspect</a>
@@ -58904,7 +60930,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_distutils_hack">_distutils_hack</a>
+    <a href="#PyInstaller.depend.analysis">PyInstaller.depend.analysis</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#_distutils_hack">_distutils_hack</a>
  &#8226;   <a href="#_pyrepl._threading_handler">_pyrepl._threading_handler</a>
  &#8226;   <a href="#_pyrepl.console">_pyrepl.console</a>
  &#8226;   <a href="#app.ui">app.ui</a>
@@ -59037,6 +61065,8 @@ imported by:
  &#8226;   <a href="#PIL.ImageFilter">PIL.ImageFilter</a>
  &#8226;   <a href="#PIL.ImageMath">PIL.ImageMath</a>
  &#8226;   <a href="#PIL._typing">PIL._typing</a>
+ &#8226;   <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#PyInstaller.depend.bytecode">PyInstaller.depend.bytecode</a>
  &#8226;   <a href="#PySide6">PySide6</a>
  &#8226;   <a href="#_pyrepl._threading_handler">_pyrepl._threading_handler</a>
  &#8226;   <a href="#_weakrefset">_weakrefset</a>
@@ -59129,8 +61159,12 @@ imported by:
  &#8226;   <a href="#scipy._lib._uarray._backend">scipy._lib._uarray._backend</a>
  &#8226;   <a href="#scipy._lib.array_api_compat.common._aliases">scipy._lib.array_api_compat.common._aliases</a>
  &#8226;   <a href="#scipy.stats._distn_infrastructure">scipy.stats._distn_infrastructure</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._functools">setuptools._vendor.importlib_metadata._functools</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat.py311">setuptools._vendor.importlib_metadata.compat.py311</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.functools">setuptools._vendor.jaraco.functools</a>
  &#8226;   <a href="#setuptools._vendor.tomli._parser">setuptools._vendor.tomli._parser</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.compat.overlay">setuptools._vendor.zipp.compat.overlay</a>
  &#8226;   <a href="#setuptools.command.bdist_egg">setuptools.command.bdist_egg</a>
  &#8226;   <a href="#setuptools.config._apply_pyprojecttoml">setuptools.config._apply_pyprojecttoml</a>
  &#8226;   <a href="#setuptools.config.expand">setuptools.config.expand</a>
@@ -59233,6 +61267,9 @@ imported by:
  &#8226;   <a href="#PIL._typing">PIL._typing</a>
  &#8226;   <a href="#PIL._util">PIL._util</a>
  &#8226;   <a href="#PIL.features">PIL.features</a>
+ &#8226;   <a href="#PyInstaller.depend.bytecode">PyInstaller.depend.bytecode</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#PyInstaller.utils.hooks.conda">PyInstaller.utils.hooks.conda</a>
  &#8226;   <a href="#_colorize">_colorize</a>
  &#8226;   <a href="#_pyrepl._threading_handler">_pyrepl._threading_handler</a>
  &#8226;   <a href="#_pyrepl.console">_pyrepl.console</a>
@@ -59269,6 +61306,7 @@ imported by:
  &#8226;   <a href="#anyio.streams.stapled">anyio.streams.stapled</a>
  &#8226;   <a href="#anyio.streams.tls">anyio.streams.tls</a>
  &#8226;   <a href="#anyio.to_thread">anyio.to_thread</a>
+ &#8226;   <a href="#app.audio_recorder">app.audio_recorder</a>
  &#8226;   <a href="#app.qa_loader">app.qa_loader</a>
  &#8226;   <a href="#app.search_engine">app.search_engine</a>
  &#8226;   <a href="#app.ui">app.ui</a>
@@ -59544,6 +61582,7 @@ imported by:
  &#8226;   <a href="#packaging.tags">packaging.tags</a>
  &#8226;   <a href="#packaging.utils">packaging.utils</a>
  &#8226;   <a href="#packaging.version">packaging.version</a>
+ &#8226;   <a href="#pefile">pefile</a>
  &#8226;   <a href="#pycparser.ast_transforms">pycparser.ast_transforms</a>
  &#8226;   <a href="#pycparser.c_ast">pycparser.c_ast</a>
  &#8226;   <a href="#pycparser.c_lexer">pycparser.c_lexer</a>
@@ -59598,6 +61637,12 @@ imported by:
  &#8226;   <a href="#setuptools._reqs">setuptools._reqs</a>
  &#8226;   <a href="#setuptools._shutil">setuptools._shutil</a>
  &#8226;   <a href="#setuptools._static">setuptools._static</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata">setuptools._vendor.importlib_metadata</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._collections">setuptools._vendor.importlib_metadata._collections</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._functools">setuptools._vendor.importlib_metadata._functools</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._meta">setuptools._vendor.importlib_metadata._meta</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata._typing">setuptools._vendor.importlib_metadata._typing</a>
+ &#8226;   <a href="#setuptools._vendor.importlib_metadata.compat.py39">setuptools._vendor.importlib_metadata.compat.py39</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.functools">setuptools._vendor.jaraco.functools</a>
  &#8226;   <a href="#setuptools._vendor.jaraco.text">setuptools._vendor.jaraco.text</a>
  &#8226;   <a href="#setuptools._vendor.packaging._elffile">setuptools._vendor.packaging._elffile</a>
@@ -60250,7 +62295,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#av.datasets">av.datasets</a>
+    <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
+ &#8226;   <a href="#av.datasets">av.datasets</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#httpx._auth">httpx._auth</a>
  &#8226;   <a href="#httpx._models">httpx._models</a>
@@ -61421,6 +63467,7 @@ imported by:
  &#8226;   <a href="#huggingface_hub.file_download">huggingface_hub.file_download</a>
  &#8226;   <a href="#huggingface_hub.inference._providers.deepinfra">huggingface_hub.inference._providers.deepinfra</a>
  &#8226;   <a href="#huggingface_hub.utils._http">huggingface_hub.utils._http</a>
+ &#8226;   <a href="#pefile">pefile</a>
 
   </div>
 
@@ -61500,6 +63547,7 @@ imported by:
  &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
  &#8226;   <a href="#PIL._deprecate">PIL._deprecate</a>
  &#8226;   <a href="#PIL.features">PIL.features</a>
+ &#8226;   <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
  &#8226;   <a href="#_collections_abc">_collections_abc</a>
  &#8226;   <a href="#_distutils_hack">_distutils_hack</a>
  &#8226;   <a href="#_pydatetime">_pydatetime</a>
@@ -61764,6 +63812,9 @@ imported by:
  &#8226;   <a href="#setuptools._vendor.tomli._parser">setuptools._vendor.tomli._parser</a>
  &#8226;   <a href="#setuptools.command.bdist_wheel">setuptools.command.bdist_wheel</a>
  &#8226;   <a href="#setuptools.warnings">setuptools.warnings</a>
+ &#8226;   <a href="#soundcard.coreaudio">soundcard.coreaudio</a>
+ &#8226;   <a href="#soundcard.mediafoundation">soundcard.mediafoundation</a>
+ &#8226;   <a href="#soundcard.pulseaudio">soundcard.pulseaudio</a>
  &#8226;   <a href="#sqlite3">sqlite3</a>
  &#8226;   <a href="#sqlite3.dbapi2">sqlite3.dbapi2</a>
  &#8226;   <a href="#sre_compile">sre_compile</a>
@@ -61826,7 +63877,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_threading_local">_threading_local</a>
+    <a href="#PyInstaller.depend.imphook">PyInstaller.depend.imphook</a>
+ &#8226;   <a href="#_threading_local">_threading_local</a>
  &#8226;   <a href="#anyio._backends._asyncio">anyio._backends._asyncio</a>
  &#8226;   <a href="#anyio._backends._trio">anyio._backends._trio</a>
  &#8226;   <a href="#anyio.lowlevel">anyio.lowlevel</a>
@@ -61864,6 +63916,8 @@ imported by:
  &#8226;   <a href="#tqdm.utils">tqdm.utils</a>
  &#8226;   <a href="#unittest.signals">unittest.signals</a>
  &#8226;   <a href="#urllib3.connectionpool">urllib3.connectionpool</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._authentication">win32ctypes.core.cffi._authentication</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._common">win32ctypes.core.cffi._common</a>
  &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
  &#8226;   <a href="#xml.sax.expatreader">xml.sax.expatreader</a>
 
@@ -61909,6 +63963,654 @@ imports:
 imported by:
     <a href="#setuptools._vendor.wheel.macosx_libfile">setuptools._vendor.wheel.macosx_libfile</a>
  &#8226;   <a href="#setuptools._vendor.wheel.wheelfile">setuptools._vendor.wheel.wheelfile</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/__init__.py" type="text/plain"><tt>win32ctypes</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#win32ctypes.version">win32ctypes.version</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.pywin32">win32ctypes.pywin32</a>
+ &#8226;   <a href="#win32ctypes.version">win32ctypes.version</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/__init__.py" type="text/plain"><tt>win32ctypes.core</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#cffi">cffi</a>
+ &#8226;   <a href="#importlib">importlib</a>
+ &#8226;   <a href="#importlib.abc">importlib.abc</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#win32ctypes">win32ctypes</a>
+ &#8226;   <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.core._authentication">win32ctypes.core._authentication</a>
+ &#8226;   <a href="#win32ctypes.core._common">win32ctypes.core._common</a>
+ &#8226;   <a href="#win32ctypes.core._dll">win32ctypes.core._dll</a>
+ &#8226;   <a href="#win32ctypes.core._resource">win32ctypes.core._resource</a>
+ &#8226;   <a href="#win32ctypes.core._system_information">win32ctypes.core._system_information</a>
+ &#8226;   <a href="#win32ctypes.core._time">win32ctypes.core._time</a>
+ &#8226;   <a href="#win32ctypes.core._winerrors">win32ctypes.core._winerrors</a>
+ &#8226;   <a href="#win32ctypes.core.cffi">win32ctypes.core.cffi</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._authentication">win32ctypes.core.cffi._authentication</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._common">win32ctypes.core.cffi._common</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._dll">win32ctypes.core.cffi._dll</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._nl_support">win32ctypes.core.cffi._nl_support</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._resource">win32ctypes.core.cffi._resource</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._system_information">win32ctypes.core.cffi._system_information</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._time">win32ctypes.core.cffi._time</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._util">win32ctypes.core.cffi._util</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes">win32ctypes.core.ctypes</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._authentication">win32ctypes.core.ctypes._authentication</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._common">win32ctypes.core.ctypes._common</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._dll">win32ctypes.core.ctypes._dll</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._nl_support">win32ctypes.core.ctypes._nl_support</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._resource">win32ctypes.core.ctypes._resource</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._system_information">win32ctypes.core.ctypes._system_information</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._time">win32ctypes.core.ctypes._time</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._util">win32ctypes.core.ctypes._util</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.core._winerrors">win32ctypes.core._winerrors</a>
+ &#8226;   <a href="#win32ctypes.core.cffi">win32ctypes.core.cffi</a>
+ &#8226;   <a href="#win32ctypes.core.compat">win32ctypes.core.compat</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes">win32ctypes.core.ctypes</a>
+ &#8226;   <a href="#win32ctypes.pywin32.win32api">win32ctypes.pywin32.win32api</a>
+ &#8226;   <a href="#win32ctypes.pywin32.win32cred">win32ctypes.pywin32.win32cred</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core._authentication"></a>
+  <a target="code" href="" type="text/plain"><tt>win32ctypes.core._authentication</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.pywin32.win32cred">win32ctypes.pywin32.win32cred</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core._common"></a>
+  <a target="code" href="" type="text/plain"><tt>win32ctypes.core._common</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.pywin32.win32api">win32ctypes.pywin32.win32api</a>
+ &#8226;   <a href="#win32ctypes.pywin32.win32cred">win32ctypes.pywin32.win32cred</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core._dll"></a>
+  <a target="code" href="" type="text/plain"><tt>win32ctypes.core._dll</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.pywin32.win32api">win32ctypes.pywin32.win32api</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core._resource"></a>
+  <a target="code" href="" type="text/plain"><tt>win32ctypes.core._resource</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.pywin32.win32api">win32ctypes.pywin32.win32api</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core._system_information"></a>
+  <a target="code" href="" type="text/plain"><tt>win32ctypes.core._system_information</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.pywin32.win32api">win32ctypes.pywin32.win32api</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core._time"></a>
+  <a target="code" href="" type="text/plain"><tt>win32ctypes.core._time</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.pywin32.win32api">win32ctypes.pywin32.win32api</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core._winerrors"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/_winerrors.py" type="text/plain"><tt>win32ctypes.core._winerrors</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core.cffi"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/cffi/__init__.py" type="text/plain"><tt>win32ctypes.core.cffi</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#logging">logging</a>
+ &#8226;   <a href="#win32ctypes.core">win32ctypes.core</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._authentication">win32ctypes.core.cffi._authentication</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._common">win32ctypes.core.cffi._common</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._dll">win32ctypes.core.cffi._dll</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._nl_support">win32ctypes.core.cffi._nl_support</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._resource">win32ctypes.core.cffi._resource</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._system_information">win32ctypes.core.cffi._system_information</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._time">win32ctypes.core.cffi._time</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._util">win32ctypes.core.cffi._util</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core.cffi._authentication"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/cffi/_authentication.py" type="text/plain"><tt>win32ctypes.core.cffi._authentication</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#weakref">weakref</a>
+ &#8226;   <a href="#win32ctypes.core.cffi">win32ctypes.core.cffi</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._common">win32ctypes.core.cffi._common</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._nl_support">win32ctypes.core.cffi._nl_support</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._util">win32ctypes.core.cffi._util</a>
+ &#8226;   <a href="#win32ctypes.core.compat">win32ctypes.core.compat</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core.cffi._common"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/cffi/_common.py" type="text/plain"><tt>win32ctypes.core.cffi._common</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#weakref">weakref</a>
+ &#8226;   <a href="#win32ctypes.core.cffi">win32ctypes.core.cffi</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._util">win32ctypes.core.cffi._util</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._authentication">win32ctypes.core.cffi._authentication</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core.cffi._dll"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/cffi/_dll.py" type="text/plain"><tt>win32ctypes.core.cffi._dll</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#win32ctypes.core.cffi">win32ctypes.core.cffi</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._util">win32ctypes.core.cffi._util</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core.cffi._nl_support"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/cffi/_nl_support.py" type="text/plain"><tt>win32ctypes.core.cffi._nl_support</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#win32ctypes.core.cffi">win32ctypes.core.cffi</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._util">win32ctypes.core.cffi._util</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._authentication">win32ctypes.core.cffi._authentication</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core.cffi._resource"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/cffi/_resource.py" type="text/plain"><tt>win32ctypes.core.cffi._resource</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#win32ctypes.core.cffi">win32ctypes.core.cffi</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._util">win32ctypes.core.cffi._util</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core.cffi._system_information"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/cffi/_system_information.py" type="text/plain"><tt>win32ctypes.core.cffi._system_information</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#win32ctypes.core.cffi">win32ctypes.core.cffi</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._util">win32ctypes.core.cffi._util</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core.cffi._time"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/cffi/_time.py" type="text/plain"><tt>win32ctypes.core.cffi._time</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#win32ctypes.core.cffi">win32ctypes.core.cffi</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._util">win32ctypes.core.cffi._util</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core.cffi._util"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/cffi/_util.py" type="text/plain"><tt>win32ctypes.core.cffi._util</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#cffi">cffi</a>
+ &#8226;   <a href="#win32ctypes.core.cffi">win32ctypes.core.cffi</a>
+ &#8226;   <a href="#win32ctypes.core.compat">win32ctypes.core.compat</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._authentication">win32ctypes.core.cffi._authentication</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._common">win32ctypes.core.cffi._common</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._dll">win32ctypes.core.cffi._dll</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._nl_support">win32ctypes.core.cffi._nl_support</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._resource">win32ctypes.core.cffi._resource</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._system_information">win32ctypes.core.cffi._system_information</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._time">win32ctypes.core.cffi._time</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core.compat"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/compat.py" type="text/plain"><tt>win32ctypes.core.compat</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core.cffi._authentication">win32ctypes.core.cffi._authentication</a>
+ &#8226;   <a href="#win32ctypes.core.cffi._util">win32ctypes.core.cffi._util</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._authentication">win32ctypes.core.ctypes._authentication</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core.ctypes"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/ctypes/__init__.py" type="text/plain"><tt>win32ctypes.core.ctypes</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#logging">logging</a>
+ &#8226;   <a href="#win32ctypes.core">win32ctypes.core</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._authentication">win32ctypes.core.ctypes._authentication</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._common">win32ctypes.core.ctypes._common</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._dll">win32ctypes.core.ctypes._dll</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._nl_support">win32ctypes.core.ctypes._nl_support</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._resource">win32ctypes.core.ctypes._resource</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._system_information">win32ctypes.core.ctypes._system_information</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._time">win32ctypes.core.ctypes._time</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._util">win32ctypes.core.ctypes._util</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core.ctypes._authentication"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/ctypes/_authentication.py" type="text/plain"><tt>win32ctypes.core.ctypes._authentication</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#ctypes">ctypes</a>
+ &#8226;   <a href="#ctypes.wintypes">ctypes.wintypes</a>
+ &#8226;   <a href="#win32ctypes.core.compat">win32ctypes.core.compat</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes">win32ctypes.core.ctypes</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._common">win32ctypes.core.ctypes._common</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._nl_support">win32ctypes.core.ctypes._nl_support</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._util">win32ctypes.core.ctypes._util</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core.ctypes._common"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/ctypes/_common.py" type="text/plain"><tt>win32ctypes.core.ctypes._common</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#ctypes">ctypes</a>
+ &#8226;   <a href="#ctypes.wintypes">ctypes.wintypes</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes">win32ctypes.core.ctypes</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._util">win32ctypes.core.ctypes._util</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._authentication">win32ctypes.core.ctypes._authentication</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._resource">win32ctypes.core.ctypes._resource</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core.ctypes._dll"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/ctypes/_dll.py" type="text/plain"><tt>win32ctypes.core.ctypes._dll</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#ctypes.wintypes">ctypes.wintypes</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes">win32ctypes.core.ctypes</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._util">win32ctypes.core.ctypes._util</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core.ctypes._nl_support"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/ctypes/_nl_support.py" type="text/plain"><tt>win32ctypes.core.ctypes._nl_support</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#ctypes.wintypes">ctypes.wintypes</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes">win32ctypes.core.ctypes</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._util">win32ctypes.core.ctypes._util</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._authentication">win32ctypes.core.ctypes._authentication</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core.ctypes._resource"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/ctypes/_resource.py" type="text/plain"><tt>win32ctypes.core.ctypes._resource</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#ctypes">ctypes</a>
+ &#8226;   <a href="#ctypes.wintypes">ctypes.wintypes</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes">win32ctypes.core.ctypes</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._common">win32ctypes.core.ctypes._common</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._util">win32ctypes.core.ctypes._util</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core.ctypes._system_information"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/ctypes/_system_information.py" type="text/plain"><tt>win32ctypes.core.ctypes._system_information</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#ctypes">ctypes</a>
+ &#8226;   <a href="#ctypes.wintypes">ctypes.wintypes</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes">win32ctypes.core.ctypes</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._util">win32ctypes.core.ctypes._util</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core.ctypes._time"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/ctypes/_time.py" type="text/plain"><tt>win32ctypes.core.ctypes._time</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#ctypes.wintypes">ctypes.wintypes</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes">win32ctypes.core.ctypes</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._util">win32ctypes.core.ctypes._util</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.core.ctypes._util"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/core/ctypes/_util.py" type="text/plain"><tt>win32ctypes.core.ctypes._util</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#ctypes">ctypes</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes">win32ctypes.core.ctypes</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._authentication">win32ctypes.core.ctypes._authentication</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._common">win32ctypes.core.ctypes._common</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._dll">win32ctypes.core.ctypes._dll</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._nl_support">win32ctypes.core.ctypes._nl_support</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._resource">win32ctypes.core.ctypes._resource</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._system_information">win32ctypes.core.ctypes._system_information</a>
+ &#8226;   <a href="#win32ctypes.core.ctypes._time">win32ctypes.core.ctypes._time</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.pywin32"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/pywin32/__init__.py" type="text/plain"><tt>win32ctypes.pywin32</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#win32ctypes">win32ctypes</a>
+ &#8226;   <a href="#win32ctypes.pywin32">win32ctypes.pywin32</a>
+ &#8226;   <a href="#win32ctypes.pywin32.pywintypes">win32ctypes.pywin32.pywintypes</a>
+ &#8226;   <a href="#win32ctypes.pywin32.win32api">win32ctypes.pywin32.win32api</a>
+ &#8226;   <a href="#win32ctypes.pywin32.win32cred">win32ctypes.pywin32.win32cred</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#win32ctypes.pywin32">win32ctypes.pywin32</a>
+ &#8226;   <a href="#win32ctypes.pywin32.pywintypes">win32ctypes.pywin32.pywintypes</a>
+ &#8226;   <a href="#win32ctypes.pywin32.win32api">win32ctypes.pywin32.win32api</a>
+ &#8226;   <a href="#win32ctypes.pywin32.win32cred">win32ctypes.pywin32.win32cred</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.pywin32.pywintypes"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/pywin32/pywintypes.py" type="text/plain"><tt>win32ctypes.pywin32.pywintypes</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#collections">collections</a>
+ &#8226;   <a href="#contextlib">contextlib</a>
+ &#8226;   <a href="#datetime">datetime</a>
+ &#8226;   <a href="#time">time</a>
+ &#8226;   <a href="#win32ctypes.pywin32">win32ctypes.pywin32</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#win32ctypes.pywin32">win32ctypes.pywin32</a>
+ &#8226;   <a href="#win32ctypes.pywin32.win32api">win32ctypes.pywin32.win32api</a>
+ &#8226;   <a href="#win32ctypes.pywin32.win32cred">win32ctypes.pywin32.win32cred</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.pywin32.win32api"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/pywin32/win32api.py" type="text/plain"><tt>win32ctypes.pywin32.win32api</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.core._common">win32ctypes.core._common</a>
+ &#8226;   <a href="#win32ctypes.core._dll">win32ctypes.core._dll</a>
+ &#8226;   <a href="#win32ctypes.core._resource">win32ctypes.core._resource</a>
+ &#8226;   <a href="#win32ctypes.core._system_information">win32ctypes.core._system_information</a>
+ &#8226;   <a href="#win32ctypes.core._time">win32ctypes.core._time</a>
+ &#8226;   <a href="#win32ctypes.pywin32">win32ctypes.pywin32</a>
+ &#8226;   <a href="#win32ctypes.pywin32.pywintypes">win32ctypes.pywin32.pywintypes</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#PyInstaller.compat">PyInstaller.compat</a>
+ &#8226;   <a href="#win32ctypes.pywin32">win32ctypes.pywin32</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.pywin32.win32cred"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/pywin32/win32cred.py" type="text/plain"><tt>win32ctypes.pywin32.win32cred</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#ctypes">ctypes</a>
+ &#8226;   <a href="#win32ctypes.core">win32ctypes.core</a>
+ &#8226;   <a href="#win32ctypes.core._authentication">win32ctypes.core._authentication</a>
+ &#8226;   <a href="#win32ctypes.core._common">win32ctypes.core._common</a>
+ &#8226;   <a href="#win32ctypes.pywin32">win32ctypes.pywin32</a>
+ &#8226;   <a href="#win32ctypes.pywin32.pywintypes">win32ctypes.pywin32.pywintypes</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes.pywin32">win32ctypes.pywin32</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32ctypes.version"></a>
+  <a target="code" href="///C:/Users/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32ctypes/version.py" type="text/plain"><tt>win32ctypes.version</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#win32ctypes">win32ctypes</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#win32ctypes">win32ctypes</a>
 
   </div>
 
@@ -61984,7 +64686,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#xml.etree">xml.etree</a>
+    <a href="#PyInstaller.lib.modulegraph.find_modules">PyInstaller.lib.modulegraph.find_modules</a>
+ &#8226;   <a href="#xml.etree">xml.etree</a>
  &#8226;   <a href="#xml.etree.ElementInclude">xml.etree.ElementInclude</a>
  &#8226;   <a href="#xml.etree.ElementPath">xml.etree.ElementPath</a>
  &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
@@ -62733,7 +65436,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#fsspec.compression">fsspec.compression</a>
+    <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
+ &#8226;   <a href="#fsspec.compression">fsspec.compression</a>
  &#8226;   <a href="#fsspec.implementations.zip">fsspec.implementations.zip</a>
  &#8226;   <a href="#huggingface_hub.serialization._dduf">huggingface_hub.serialization._dduf</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
@@ -62742,6 +65446,7 @@ imported by:
  &#8226;   <a href="#requests.utils">requests.utils</a>
  &#8226;   <a href="#setuptools._distutils.archive_util">setuptools._distutils.archive_util</a>
  &#8226;   <a href="#setuptools._vendor.wheel.wheelfile">setuptools._vendor.wheel.wheelfile</a>
+ &#8226;   <a href="#setuptools._vendor.zipp">setuptools._vendor.zipp</a>
  &#8226;   <a href="#setuptools.archive_util">setuptools.archive_util</a>
  &#8226;   <a href="#setuptools.command.bdist_egg">setuptools.command.bdist_egg</a>
  &#8226;   <a href="#setuptools.command.bdist_wheel">setuptools.command.bdist_wheel</a>
@@ -62825,11 +65530,30 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="zipp"></a>
+  <a target="code" href="" type="text/plain"><tt>zipp</tt></a>
+<span class="moduletype">AliasNode</span>  <div class="import">
+imports:
+    <a href="#setuptools._vendor.zipp">setuptools._vendor.zipp</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#setuptools._vendor.zipp.compat">setuptools._vendor.zipp.compat</a>
+ &#8226;   <a href="#setuptools._vendor.zipp.compat.overlay">setuptools._vendor.zipp.compat.overlay</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="zlib"></a>
   <tt>zlib</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
     <a href="#PIL.PdfParser">PIL.PdfParser</a>
  &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
+ &#8226;   <a href="#PyInstaller.archive.readers">PyInstaller.archive.readers</a>
+ &#8226;   <a href="#PyInstaller.loader.pyimod01_archive">PyInstaller.loader.pyimod01_archive</a>
  &#8226;   <a href="#encodings.zlib_codec">encodings.zlib_codec</a>
  &#8226;   <a href="#faster_whisper.transcribe">faster_whisper.transcribe</a>
  &#8226;   <a href="#gzip">gzip</a>
