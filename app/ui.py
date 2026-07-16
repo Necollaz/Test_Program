@@ -32,6 +32,7 @@ from app.audio_recorder import (
 )
 from app.config import AUTO_COOLDOWN_SECONDS, RECORDINGS_DIR
 from app.config import AUTO_FRAGMENT_MIN_SCORE
+from app.global_hotkey import GlobalHotkey
 from app.qa_loader import load_questions
 from app.search_engine import format_answer_html, search
 from app.session_logs import log_analysis, log_question
@@ -366,6 +367,7 @@ class MainWindow(QMainWindow):
         self.auto_worker: AutoRecognitionWorker | None = None
         self.model_thread: QThread | None = None
         self.model_worker: ModelWarmupWorker | None = None
+        self.global_hotkey: GlobalHotkey | None = None
         self.last_results: list[dict[str, Any]] = []
         self.audio_sources: list[AudioSource] = []
         self.model_ready = False
@@ -511,9 +513,12 @@ class MainWindow(QMainWindow):
         main_layout.addWidget(splitter)
 
         self.setCentralWidget(central)
+        self.start_global_hotkey()
         self.start_model_warmup()
 
     def closeEvent(self, event: Any) -> None:
+        if self.global_hotkey is not None:
+            self.global_hotkey.stop()
         if self.auto_worker is not None:
             self.auto_worker.stop()
         if self.auto_thread is not None:
@@ -523,6 +528,40 @@ class MainWindow(QMainWindow):
             self.thread.quit()
             self.thread.wait(2000)
         super().closeEvent(event)
+
+    def start_global_hotkey(self) -> None:
+        self.global_hotkey = GlobalHotkey()
+        self.global_hotkey.activated.connect(self.toggle_window_visibility)
+        self.global_hotkey.failed.connect(self.on_global_hotkey_failed)
+        self.global_hotkey.start()
+
+    def toggle_window_visibility(self) -> None:
+        if self.isVisible() and not self.isMinimized():
+            self.hide()
+            log_analysis(
+                event="Окно скрыто горячей клавишей",
+                mode="hotkey",
+                details="Windows: Shift+Alt+1; macOS: Shift+Control+1",
+            )
+            return
+
+        self.showNormal()
+        self.show()
+        self.raise_()
+        self.activateWindow()
+        log_analysis(
+            event="Окно показано горячей клавишей",
+            mode="hotkey",
+            details="Windows: Shift+Alt+1; macOS: Shift+Control+1",
+        )
+
+    def on_global_hotkey_failed(self, error: str) -> None:
+        self.status_label.setText(error)
+        log_analysis(
+            event="Ошибка глобальной горячей клавиши",
+            mode="hotkey",
+            details=error,
+        )
 
     def start_model_warmup(self) -> None:
         self.status_label.setText(f"Загружено вопросов: {len(self.items)}. Загружаю модель...")
