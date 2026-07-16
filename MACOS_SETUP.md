@@ -60,6 +60,8 @@ Typical Google Meet routing:
 
 If you only choose your regular microphone, the app will listen to you, not the person in Google Meet.
 
+Do not choose `Steam Streaming Speakers` for Google Meet audio. On macOS it can appear like a system-audio source, but it usually does not provide a stable recording stream to the app. Use `BlackHole 2ch` or another virtual audio device instead.
+
 ## 5. Logs
 
 On macOS the app writes logs to:

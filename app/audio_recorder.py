@@ -2,6 +2,7 @@ from pathlib import Path
 from collections import deque
 from collections.abc import Callable
 from typing import Any, NamedTuple
+import sys
 
 import numpy as np
 import sounddevice as sd
@@ -468,6 +469,9 @@ def _find_audio_source(audio_source_id: str | None) -> AudioSource | None:
 
 def _list_loopback_sources() -> list[AudioSource]:
     if sc is None:
+        return []
+
+    if sys.platform == "darwin":
         return []
 
     try:

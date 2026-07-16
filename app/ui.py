@@ -796,6 +796,17 @@ class MainWindow(QMainWindow):
         )
         if loopback_index >= 0:
             self.audio_source_box.setCurrentIndex(loopback_index)
+        else:
+            virtual_input_index = next(
+                (
+                    index
+                    for index, source in enumerate(self.audio_sources)
+                    if source.label.startswith("Системный звук / Meet")
+                ),
+                -1,
+            )
+            if virtual_input_index >= 0:
+                self.audio_source_box.setCurrentIndex(virtual_input_index)
 
         has_sources = bool(self.audio_sources)
         self.record_button.setEnabled(has_sources and self.model_ready)
