@@ -59,3 +59,29 @@ Typical Google Meet routing:
 ```
 
 If you only choose your regular microphone, the app will listen to you, not the person in Google Meet.
+
+## 5. Logs
+
+On macOS the app writes logs to:
+
+```text
+~/InterviewAssistant/logs
+```
+
+Open the logs folder with:
+
+```bash
+open ~/InterviewAssistant/logs
+```
+
+Question history:
+
+```text
+~/InterviewAssistant/logs/asked_questions.md
+```
+
+Program analysis:
+
+```text
+~/InterviewAssistant/logs/program_analysis.md
+```

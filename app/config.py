@@ -8,6 +8,8 @@ else:
     BASE_DIR = Path(__file__).resolve().parent.parent
     BUNDLED_DIR = BASE_DIR
 
+APP_DATA_DIR = Path.home() / "InterviewAssistant" if sys.platform == "darwin" else BASE_DIR
+
 EXTERNAL_QUESTIONS_DIR = BASE_DIR / "questions"
 BUNDLED_QUESTIONS_DIR = BUNDLED_DIR / "questions"
 
@@ -16,8 +18,8 @@ QUESTIONS_DIR = (
     if EXTERNAL_QUESTIONS_DIR.exists()
     else BUNDLED_QUESTIONS_DIR
 )
-RECORDINGS_DIR = BASE_DIR / "recordings"
-LOGS_DIR = BASE_DIR / "logs"
+RECORDINGS_DIR = APP_DATA_DIR / "recordings"
+LOGS_DIR = APP_DATA_DIR / "logs"
 QUESTIONS_LOG_PATH = LOGS_DIR / "asked_questions.md"
 ANALYSIS_LOG_PATH = LOGS_DIR / "program_analysis.md"
 
