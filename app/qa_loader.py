@@ -11,6 +11,9 @@ SECTION_NAMES = {
     "Пример": "example",
     "Теги": "tags",
     "Уровень": "level",
+    "Варианты": "aliases",
+    "Синонимы": "aliases",
+    "Ключевые слова": "keywords",
 }
 
 
@@ -67,6 +70,8 @@ def parse_question_block(block: str, source: str) -> dict[str, Any]:
         "example": [],
         "tags": [],
         "level": [],
+        "aliases": [],
+        "keywords": [],
     }
 
     current_section: str | None = "short_answer"
@@ -93,10 +98,14 @@ def parse_question_block(block: str, source: str) -> dict[str, Any]:
     example = clean_text("\n".join(sections["example"]))
     tags = parse_tags(clean_text("\n".join(sections["tags"])))
     level = clean_text("\n".join(sections["level"]))
+    aliases = clean_text("\n".join(sections["aliases"]))
+    keywords = clean_text("\n".join(sections["keywords"]))
 
     search_text = " ".join(
         [
             question,
+            aliases,
+            keywords,
             short_answer,
             full_answer,
             example,
@@ -112,6 +121,8 @@ def parse_question_block(block: str, source: str) -> dict[str, Any]:
         "example": example,
         "tags": tags,
         "level": level,
+        "aliases": aliases,
+        "keywords": keywords,
         "source": source,
         "search_text": normalize_text(search_text),
     }

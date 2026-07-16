@@ -17,6 +17,9 @@ QUESTIONS_DIR = (
     else BUNDLED_QUESTIONS_DIR
 )
 RECORDINGS_DIR = BASE_DIR / "recordings"
+LOGS_DIR = BASE_DIR / "logs"
+QUESTIONS_LOG_PATH = LOGS_DIR / "asked_questions.md"
+ANALYSIS_LOG_PATH = LOGS_DIR / "program_analysis.md"
 
 LANGUAGE = "ru"
 WHISPER_MODEL = "small"
@@ -24,10 +27,24 @@ WHISPER_BEAM_SIZE = 1
 WHISPER_INITIAL_PROMPT = (
     "Вопросы собеседования по C#, Unity и ООП. "
     "Термины: ООП, объектно-ориентированное программирование, "
-    "инкапсуляция, наследование, полиморфизм, абстракция, MonoBehaviour."
+    "инкапсуляция, наследование, полиморфизм, абстракция, MonoBehaviour, "
+    "Unity, C#, Jira, WEEEK, Trello, Code Review, ревью кода, задачи, команда."
 )
 
 SAMPLE_RATE = 16000
-RECORD_SECONDS = 4
+RECORD_SECONDS = 8
+MIN_RECORD_SECONDS = 2.0
+PARTIAL_TRANSCRIBE_SECONDS = 2.0
+SILENCE_STOP_SECONDS = 1.25
+SPEECH_RMS_THRESHOLD = 0.0035
+AUTO_PREROLL_SECONDS = 1.25
+AUTO_TRIGGER_CHUNKS = 1
+AUTO_NOISE_MULTIPLIER = 2.4
+AUTO_SILENCE_MULTIPLIER = 1.6
+AUTO_COOLDOWN_SECONDS = 0.8
+AUTO_MIN_VOICE_SECONDS = 0.55
+AUTO_MIN_RECOGNIZED_LETTERS = 4
+AUTO_FRAGMENT_MIN_SCORE = 70
+WHISPER_CPU_THREADS = 4
 
 MIN_SEARCH_SCORE = 50
